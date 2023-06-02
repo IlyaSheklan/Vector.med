@@ -92,8 +92,19 @@
 }
 .dropdown-menu {
 }
-.dropdown-menu-dark {
+
+.header__navbar .dropdown-menu[data-bs-popper]{
+    left: auto;
+    margin-top: 35px;
 }
-.dropdown-item {
+
+.header__navbar .dropdown-menu{
+    padding: 15px;
+    border: 1px solid #EFF0FD;
+    border-radius: 12px;
+    box-shadow: 0px 8px 40px rgba(69, 74, 79, 0.08);
+
+    color: var(--accent-color);
 }
+
 /* Header styles END */

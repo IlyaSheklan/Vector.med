@@ -19,13 +19,95 @@
 <body>
 
     <div class="wrapper">
-        <header class="header"></header>
+        <!-- Header -->
+        <header class="header">
+            <div class="header__top">
+                <div class="container">
+                    <div class="header__top-inner">
+                        <div class="header__logo">
+                            <img src="/assets/logo/logo-header.svg" alt="logo" class="head-logo">
+                        </div>
+                        <div class="header__contact">
+                            <a href="#" class="contact-email">vektor@vektor-med.ru</a>
+                            <a href="#" class="contact-phone">8 (8639) 26-84-96</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="container">
+                    <div class="header__bottom-inner">
+                        <a href="#" class="header__catalog-link d-none d-md-block">
+                            <svg class="icon">
+                                <use xlink:href="#catalog-item"></use>
+                            </svg>
+                            <span>Каталог продукции</span>
+                        </a>
+                        <div class="header__bottom-mobile">
+                            <a href="#" class="header__catalog-link">
+                                <svg class="icon">
+                                    <use xlink:href="#catalog-item"></use>
+                                </svg>
+                                <span>Каталог</span>
+                            </a>
+                            <a href="#" class="header-btn-burger">
+                                <span class="burger-line"></span>
+                                <span class="burger-line"></span>
+                                <span class="burger-line"></span>
+                            </a>
+                        </div>
+                        <nav class="header__navbar navbar d-none d-md-block">
+                            <ul class="header__navbar-list nav">
+                                <li class="list-item">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                        О компании
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-dark">
+                                        <li><a class="dropdown-item" href="#">Наши патенты</a></li>
+                                        <li><a class="dropdown-item" href="#">Наши изобретатели</a></li>
+                                        <li><a class="dropdown-item" href="#">Наше руководство</a></li>
+                                        <li><a class="dropdown-item" href="#">Статьи</a></li>
+                                    </ul>
+                                </li>
+                                <li class="list-item">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                        B2B
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-dark">
+                                        <li><a class="dropdown-item" href="#">Коммерческое предложение</a></li>
+                                        <li><a class="dropdown-item" href="#">Оплата</a></li>
+                                        <li><a class="dropdown-item" href="#">Доставка</a></li>
+                                        <li><a class="dropdown-item" href="#">Реквизиты</a></li>
+                                    </ul>
+                                </li>
+                                <li class="list-item">
+                                    <a href="#" class="nav-link">
+                                        Контакты
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
         <main class="main"></main>
-        <footer class="footer"></footer>
+        <footer class="footer">
+
+            <svg width="0" height="0" class="hidden">
+                <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="catalog-item">
+                  <path d="M0 1.81818C0 0.814028 0.814028 0 1.81818 0H7.27273C8.27688 0 9.09091 0.814028 9.09091 1.81818V7.27273C9.09091 8.27688 8.27688 9.09091 7.27273 9.09091H1.81818C0.814028 9.09091 0 8.27688 0 7.27273V1.81818Z" fill="#005ED2"></path>
+                  <path d="M10.9091 1.81818C10.9091 0.814028 11.7231 0 12.7273 0H18.1818C19.186 0 20 0.814028 20 1.81818V7.27273C20 8.27688 19.186 9.09091 18.1818 9.09091H12.7273C11.7231 9.09091 10.9091 8.27688 10.9091 7.27273V1.81818Z" fill="#005ED2"></path>
+                  <path d="M0 12.7273C0 11.7231 0.814028 10.9091 1.81818 10.9091H7.27273C8.27688 10.9091 9.09091 11.7231 9.09091 12.7273V18.1818C9.09091 19.186 8.27688 20 7.27273 20H1.81818C0.814028 20 0 19.186 0 18.1818V12.7273Z" fill="#005ED2"></path>
+                  <path d="M10.9091 12.7273C10.9091 11.7231 11.7231 10.9091 12.7273 10.9091H18.1818C19.186 10.9091 20 11.7231 20 12.7273V18.1818C20 19.186 19.186 20 18.1818 20H12.7273C11.7231 20 10.9091 19.186 10.9091 18.1818V12.7273Z" fill="#005ED2"></path>
+                </symbol>
+            </svg>
+        </footer>
     </div>
     
      <!-- Bootstrap -->
-     <script src="/libs/bootstrap/bootstrap.bundle.min.js.map"></script>
+     <script src="/libs/bootstrap/bootstrap.bundle.min.js"></script>
 
      <!-- Swiper -->
      <script src="/libs/swiper/swiper-bundle.min.js"></script>

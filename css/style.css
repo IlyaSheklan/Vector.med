@@ -88,6 +88,23 @@
     padding: 0 16px;
     color: var(--color-main-text);
 }
+
+.nav-link::after{
+    display: none;
+}
+
+.icon.arrow{
+    width: 8px;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+.list-item:hover .icon.arrow{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    fill: var(--accent-color);
+}
+
 .dropdown-toggle {
 }
 .dropdown-menu {

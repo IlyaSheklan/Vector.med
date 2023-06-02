@@ -20,7 +20,7 @@
 
     <div class="wrapper">
         <!-- Header -->
-        <header class="header">
+        <header class="header d-flex justify-content-between d-md-block ">
             <div class="header__top">
                 <div class="container">
                     <div class="header__top-inner d-md-flex justify-content-md-between align-items-center">
@@ -38,16 +38,16 @@
             </div>
             <div class="header__bottom">
                 <div class="container">
-                    <div class="header__bottom-inner">
-                        <a href="#" class="header__catalog-link d-none d-md-block">
-                            <svg class="icon">
+                    <div class="header__bottom-inner d-flex align-items-center">
+                        <a href="#" class="header__catalog-link d-none d-md-flex align-items-center">
+                            <svg class="icon me-2">
                                 <use xlink:href="#catalog-item"></use>
                             </svg>
                             <span>Каталог продукции</span>
                         </a>
-                        <div class="header__bottom-mobile d-block d-md-none">
-                            <a href="#" class="header__catalog-link">
-                                <svg class="icon">
+                        <div class="header__bottom-mobile d-flex align-items-center d-md-none">
+                            <a href="#" class="header__catalog-link d-flex align-items-center pe-4">
+                                <svg class="icon me-2">
                                     <use xlink:href="#catalog-item"></use>
                                 </svg>
                                 <span>Каталог</span>
@@ -58,7 +58,7 @@
                                 <span class="burger-line"></span>
                             </a>
                         </div>
-                        <nav class="header__navbar navbar d-none d-md-block">
+                        <nav class="header__navbar navbar d-none d-md-block ms-3">
                             <ul class="header__navbar-list nav">
                                 <li class="list-item">
                                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">

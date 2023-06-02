@@ -48,6 +48,31 @@ a{
 }
 /* Container END */
 
+/* Button START */
+.btn-main{
+    background-color: var(--accent-color);
+    border-radius: 30px;
+
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #fff;
+}
+
+.btn-main:hover{
+    background-color: var(--hover-bcg);
+    color: #fff;
+}
+/* Button END */
+
+/* Title START */
+.title-main{
+    font-family: 'Rubik-Regular';
+    font-weight: 400;
+    color: var(--text-main-color);
+}
+/* Title END */
+
 /* Images styles START */
 .img-box{
     width: 100%;

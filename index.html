@@ -20,87 +20,161 @@
 
     <div class="wrapper">
         <!-- Header -->
-        <header class="header ">
-            <div class="header__top">
-                <div class="container">
-                    <div class="header__top-inner d-flex justify-content-between align-items-center">
-                        <div class="header__logo">
-                            <a href="/">
-                                <img src="/assets/logo/logo-header.svg" alt="logo" class="head-logo">
-                            </a>
+        <div class="position-sticky top-0 z-100" id="headerBox">
+            <header class="header">
+                <div class="header__top">
+                    <div class="container">
+                        <div class="header__top-inner d-flex justify-content-between align-items-center">
+                            <div class="header__logo">
+                                <a href="/">
+                                    <img src="/assets/logo/logo-header.svg" alt="logo" class="head-logo">
+                                </a>
+                            </div>
+                            <div class="header__contact d-none d-md-block">
+                                <a href="mailto:vektor@vektor-med.ru" class="contact-email pe-3">vektor@vektor-med.ru</a>
+                                <a href="tel:+88639268496" class="contact-phone">8 (8639) 26-84-96</a>
+                            </div>
+                            <div class="header__bottom-mobile d-flex align-items-center d-md-none">
+                                <a href="#" class="header__catalog-link d-flex align-items-center pe-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileCatalog" aria-controls="mobileCatalog">
+                                    <svg class="icon me-2">
+                                        <use xlink:href="#catalog-item"></use>
+                                    </svg>
+                                    <span>Каталог</span>
+                                </a>
+
+                                <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileCatalog" aria-labelledby="mobileCatalogLabel">
+                                    <div class="offcanvas-header offcanvas-header-menu">
+                                      <h5 class="offcanvas-title mobile-menu-title" id="mobileCatalogLabel">Каталог</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        
+                                    </div>
+                                </div>
+
+                                <a href="#" class="header-btn-burger" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+                                    <span class="burger-line"></span>
+                                    <span class="burger-line"></span>
+                                    <span class="burger-line"></span>
+                                </a>
+
+                                <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+                                    <div class="offcanvas-header offcanvas-header-menu">
+                                      <h5 class="offcanvas-title mobile-menu-title" id="mobileMenuLabel">Меню</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <nav class="offcanvas__navbar navbar">
+                                            <ul class="offcanvas__navbar-list nav">
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <span>О компании</span>
+                                                        <svg class="icon arrow">
+                                                            <use xlink:href="#menu-arrow"></use>
+                                                        </svg>
+                                                    </a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#">Наши патенты</a></li>
+                                                        <li><a class="dropdown-item" href="#">Наши изобретатели</a></li>
+                                                        <li><a class="dropdown-item" href="#">Наше руководство</a></li>
+                                                        <li><a class="dropdown-item" href="#">Статьи</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <span>B2B</span>
+                                                        <svg class="icon arrow">
+                                                            <use xlink:href="#menu-arrow"></use>
+                                                        </svg>
+                                                    </a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#">Коммерческое предложение</a></li>
+                                                        <li><a class="dropdown-item" href="#">Оплата</a></li>
+                                                        <li><a class="dropdown-item" href="#">Доставка</a></li>
+                                                        <li><a class="dropdown-item" href="#">Реквизиты</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link">
+                                                        Контакты
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
-                        <div class="header__contact d-none d-md-block">
-                            <a href="mailto:vektor@vektor-med.ru" class="contact-email pe-3">vektor@vektor-med.ru</a>
-                            <a href="tel:+88639268496" class="contact-phone">8 (8639) 26-84-96</a>
-                        </div>
-                        <div class="header__bottom-mobile d-flex align-items-center d-md-none">
-                            <a href="#" class="header__catalog-link d-flex align-items-center pe-4">
+                    </div>
+                </div>
+                <div class="header__bottom d-none d-md-block">
+                    <div class="container">
+                        <div class="header__bottom-inner d-flex align-items-center">
+                            <a href="#" class="header__catalog-link d-none d-md-flex align-items-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#catalogMenu" aria-controls="catalogMenu">
                                 <svg class="icon me-2">
                                     <use xlink:href="#catalog-item"></use>
                                 </svg>
-                                <span>Каталог</span>
+                                <span>Каталог продукции</span>
                             </a>
-                            <a href="#" class="header-btn-burger">
-                                <span class="burger-line"></span>
-                                <span class="burger-line"></span>
-                                <span class="burger-line"></span>
-                            </a>
+    
+                            <div class="offcanvas offcanvas-top offcanvas-catalog" tabindex="-1" id="catalogMenu" aria-labelledby="catalogMenuLabel">
+                                <div class="container">
+                                    <div class="offcanvas-header justify-content-end">
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <nav class="header__navbar navbar d-none d-md-block ms-3">
+                                <ul class="header__navbar-list nav">
+                                    <li class="list-item">
+                                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <span>О компании</span>
+                                            <svg class="icon arrow">
+                                                <use xlink:href="#menu-arrow"></use>
+                                            </svg>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-company">
+                                            <li><a class="dropdown-item" href="#">Наши патенты</a></li>
+                                            <li><a class="dropdown-item" href="#">Наши изобретатели</a></li>
+                                            <li><a class="dropdown-item" href="#">Наше руководство</a></li>
+                                            <li><a class="dropdown-item" href="#">Статьи</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <span>B2B</span>
+                                            <svg class="icon arrow">
+                                                <use xlink:href="#menu-arrow"></use>
+                                            </svg>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-b2b">
+                                            <li><a class="dropdown-item" href="#">Коммерческое предложение</a></li>
+                                            <li><a class="dropdown-item" href="#">Оплата</a></li>
+                                            <li><a class="dropdown-item" href="#">Доставка</a></li>
+                                            <li><a class="dropdown-item" href="#">Реквизиты</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#" class="nav-link">
+                                            Контакты
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="header__bottom d-none d-md-block">
-                <div class="container">
-                    <div class="header__bottom-inner d-flex align-items-center">
-                        <a href="#" class="header__catalog-link d-none d-md-flex align-items-center">
-                            <svg class="icon me-2">
-                                <use xlink:href="#catalog-item"></use>
-                            </svg>
-                            <span>Каталог продукции</span>
-                        </a>
-                        <nav class="header__navbar navbar d-none d-md-block ms-3">
-                            <ul class="header__navbar-list nav">
-                                <li class="list-item">
-                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <span>О компании</span>
-                                        <svg class="icon arrow">
-                                            <use xlink:href="#menu-arrow"></use>
-                                        </svg>
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-company">
-                                        <li><a class="dropdown-item" href="#">Наши патенты</a></li>
-                                        <li><a class="dropdown-item" href="#">Наши изобретатели</a></li>
-                                        <li><a class="dropdown-item" href="#">Наше руководство</a></li>
-                                        <li><a class="dropdown-item" href="#">Статьи</a></li>
-                                    </ul>
-                                </li>
-                                <li class="list-item">
-                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <span>B2B</span>
-                                        <svg class="icon arrow">
-                                            <use xlink:href="#menu-arrow"></use>
-                                        </svg>
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-b2b">
-                                        <li><a class="dropdown-item" href="#">Коммерческое предложение</a></li>
-                                        <li><a class="dropdown-item" href="#">Оплата</a></li>
-                                        <li><a class="dropdown-item" href="#">Доставка</a></li>
-                                        <li><a class="dropdown-item" href="#">Реквизиты</a></li>
-                                    </ul>
-                                </li>
-                                <li class="list-item">
-                                    <a href="#" class="nav-link">
-                                        Контакты
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </header>
+            </header>
+        </div>
 
-        <main class="main"></main>
+        <main class="main">
+            
+        </main>
 
         <footer class="footer">
 

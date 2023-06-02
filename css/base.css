@@ -1,0 +1,68 @@
+/* Main styles START */
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+
+body{
+    min-width: 320px;
+    height: 100%;
+    overflow-x: hidden;
+
+    font-family: 'GolosText-Regular', 'Arial';
+    font-weight: 400;
+    font-style: 16px;
+    line-height: 18px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.wrapper{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/* Main styles END */
+
+/* Container START */
+.container{
+    padding: 0 20px;
+}
+
+@media (min-width: 576px) {
+    .container{
+        padding: 0;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container{
+        max-width: 1320px;
+    }
+}
+/* Container END */
+
+/* Images styles START */
+.img-box{
+    width: 100%;
+    padding-top: 100%;
+    overflow: hidden;
+    position: relative;
+    display: block;
+}
+
+.img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/* Images styles END */

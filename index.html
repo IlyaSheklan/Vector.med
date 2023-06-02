@@ -23,13 +23,15 @@
         <header class="header">
             <div class="header__top">
                 <div class="container">
-                    <div class="header__top-inner">
+                    <div class="header__top-inner d-md-flex justify-content-md-between align-items-center">
                         <div class="header__logo">
-                            <img src="/assets/logo/logo-header.svg" alt="logo" class="head-logo">
+                            <a href="/">
+                                <img src="/assets/logo/logo-header.svg" alt="logo" class="head-logo">
+                            </a>
                         </div>
-                        <div class="header__contact">
-                            <a href="#" class="contact-email">vektor@vektor-med.ru</a>
-                            <a href="#" class="contact-phone">8 (8639) 26-84-96</a>
+                        <div class="header__contact d-none d-md-block">
+                            <a href="mailto:vektor@vektor-med.ru" class="contact-email pe-3">vektor@vektor-med.ru</a>
+                            <a href="tel:+88639268496" class="contact-phone">8 (8639) 26-84-96</a>
                         </div>
                     </div>
                 </div>
@@ -43,7 +45,7 @@
                             </svg>
                             <span>Каталог продукции</span>
                         </a>
-                        <div class="header__bottom-mobile">
+                        <div class="header__bottom-mobile d-block d-md-none">
                             <a href="#" class="header__catalog-link">
                                 <svg class="icon">
                                     <use xlink:href="#catalog-item"></use>

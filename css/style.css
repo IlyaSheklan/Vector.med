@@ -4,3 +4,72 @@
 @import url('/css/vars.css');
 /* Imports END */
 
+/* Header styles START */
+.header {
+    
+}
+.header__top {
+    padding: 13px 0;
+    border-bottom: 1px solid #E4E4E4;
+}
+.container {
+}
+.header__top-inner {
+}
+.header__logo {
+}
+.head-logo {
+}
+.header__contact {
+}
+.d-none {
+}
+.d-md-block {
+}
+.contact-email {
+    color: var(--color-gray);
+}
+.contact-phone {
+    color: var(--color-main-text);
+}
+.header__bottom {
+}
+.header__bottom-inner {
+}
+.header__catalog-link {
+}
+.icon {
+    width: 20px;
+    height: 20px;
+}
+.header__bottom-mobile {
+}
+.d-block {
+}
+.d-md-none {
+}
+.header-btn-burger {
+}
+.burger-line {
+}
+.header__navbar {
+}
+.navbar {
+}
+.header__navbar-list {
+}
+.nav {
+}
+.list-item {
+}
+.nav-link {
+}
+.dropdown-toggle {
+}
+.dropdown-menu {
+}
+.dropdown-menu-dark {
+}
+.dropdown-item {
+}
+/* Header styles END */

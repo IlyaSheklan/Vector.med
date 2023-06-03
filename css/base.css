@@ -71,6 +71,20 @@ a{
     font-weight: 400;
     color: var(--text-main-color);
 }
+
+.section-title {
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .section-title {
+        font-size: 28px;
+        line-height: 23px;
+        margin-bottom: 30px;
+    }
+}
 /* Title END */
 
 /* Images styles START */

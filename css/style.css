@@ -51,11 +51,12 @@
 }
 
 .offcanvas-catalog{
-    /* z-index: -1; */
+    box-shadow: 0px 2px 80px rgba(119, 145, 177, 0.18);
 }
 
 .offcanvas-catalog.offcanvas-top{
     top: 142px;
+    height: fit-content;
 } 
 
 .header__bottom-inner .offcanvas-backdrop{
@@ -148,4 +149,14 @@
 #mobileMenu .dropdown-item{
     color: var(--accent-color);
 }
+
+.catalog-nav{
+    padding-top: 20px;
+}
+
+.catalog-nav li{
+    margin-bottom: 10px;
+    color: var(--accent-color);
+}
+
 /* Header styles END */

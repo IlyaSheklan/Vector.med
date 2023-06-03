@@ -1,7 +1,7 @@
 /* Imporst START */
-@import url('/css/fonts.css');
-@import url('/css/base.css');
-@import url('/css/vars.css');
+@import url('./css/fonts.css');
+@import url('./css/base.css');
+@import url('./css/vars.css');
 /* Imports END */
 
 /* Header styles START */
@@ -227,6 +227,12 @@
 
 .about__inner-img-box .img-box{
     padding-top: 56%;
+}
+
+@media (min-width: 992px) {
+    .about__inner-img-box .img-box{
+        padding-top: 94%;
+    }
 }
 
 .img-box {

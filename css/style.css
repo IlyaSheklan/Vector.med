@@ -227,18 +227,36 @@
 
 .about__inner-img-box .img-box{
     padding-top: 56%;
+    max-width: 220px;
+    height: 220px;
+    margin: 0 auto;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     .about__inner-img-box .img-box{
-        padding-top: 94%;
+        padding-top: 100%;
+        max-width: 100%;
+        height: auto;
     }
 }
 
-.img-box {
-}
 .about-img {
+    border-radius: 50%;
 }
-.img {
+
+.about-img.img {
+    max-width: 220px;
+    max-height: 220px;
+    object-fit: cover;
 }
+
+@media (min-width: 768px) {
+    .about-img.img {
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+}
+
 /* About section styles END */

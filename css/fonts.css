@@ -3,34 +3,34 @@
     font-family: 'Rubik-Regular';
     font-weight: 400;
     font-style: normal;
-    src:url('./fonts/Rubik-Regular.ttf') format('ttf'),
-        url('./fonts/Rubik-Regular.woff') format('woff'),
-        url('./fonts/Rubik-Regular.woff2') format('woff2');
+    src:url('/fonts/Rubik-Regular.ttf') format('ttf'),
+        url('/fonts/Rubik-Regular.woff') format('woff'),
+        url('/fonts/Rubik-Regular.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'Rubik-Medium';
     font-weight: 500;
     font-style: normal;
-    src:url('./fonts/Rubik-Medium.ttf') format('ttf'),
-        url('./fonts/Rubik-Medium.woff') format('woff'),
-        url('./fonts/Rubik-Medium.woff2') format('woff2');
+    src:url('/fonts/Rubik-Medium.ttf') format('ttf'),
+        url('/fonts/Rubik-Medium.woff') format('woff'),
+        url('/fonts/Rubik-Medium.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'GolosText-Regular';
     font-weight: 400;
     font-style: normal;
-    src:url('./fonts/GolosText-Regular.ttf') format('ttf'),
-        url('./fonts/GolosText-Regular.woff') format('woff'),
-        url('./fonts/GolosText-Regular.woff2') format('woff2');
+    src:url('/fonts/GolosText-Regular.ttf') format('ttf'),
+        url('/fonts/GolosText-Regular.woff') format('woff'),
+        url('/fonts/GolosText-Regular.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'GolosText-Medium';
     font-weight: 500;
     font-style: normal;
-    src:url('./fonts/GolosText-Medium.ttf') format('ttf'),
-        url('./fonts/GolosText-Medium.woff') format('woff'),
-        url('./fonts/GolosText-Medium.woff2') format('woff2');
+    src:url('/fonts/GolosText-Medium.ttf') format('ttf'),
+        url('/fonts/GolosText-Medium.woff') format('woff'),
+        url('/fonts/GolosText-Medium.woff2') format('woff2');
 }

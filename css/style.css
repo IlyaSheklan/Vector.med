@@ -382,7 +382,7 @@
 }
 
 @media (min-width: 992px) {
-    .category-cards {
+    .category__inner .category-cards {
         padding-top: 0;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -402,15 +402,21 @@
     background-position: right;
     border-radius: 12px;
     margin-bottom: 20px;
+    transition-duration: 0.3s;
+}
+
+.category-cards__item:hover{
+    background-position: -60%;
 }
 
 @media (min-width: 992px) {
     .category-cards__item {
         max-height: 100%;
+        background-position: 20%;
         margin-bottom: 0;
     }
 
-    .category-cards__item:last-child {
+    .category__inner .category-cards__item:last-child {
         grid-column: 2 / 2;
         grid-row: 1 / 3;
     }

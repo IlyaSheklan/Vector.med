@@ -165,12 +165,6 @@
     padding-top: 40px;
 }
 
-.about__inner {
-}
-
-.about__inner-cards {
-}
-
 .about-card-item {
     margin-bottom: 20px;
 }
@@ -390,9 +384,6 @@
     }
 }
 
-.category-cards__box {
-
-}
 .category-cards__item {
     display: block;
     max-height: 150px;
@@ -440,8 +431,7 @@
     font-size: 20px;
     line-height: 23px;
 }
-.title-main {
-}
+
 .cards__btn-arrow{
     width: 38px;
     height: 38px;

@@ -424,9 +424,11 @@
     padding: 20px;
     height: 100%;
 }
+
 .category-cards__content-text {
     margin-bottom: 24px;
 }
+
 .category-cards__content-title {
     font-size: 20px;
     line-height: 23px;
@@ -448,3 +450,46 @@
 /* Cards END */
 
 /* Slider & Category section styles START */
+
+/* Our patents section styles START */
+.our-patents {
+    padding-top: 22px;
+}
+
+.our-patents__inner {
+}
+.our-patents__header {
+}
+.d-flex {
+}
+.justify-content-between {
+}
+.section-title {
+}
+.title-main {
+}
+.our-patents__link {
+    color: var(--text-main-color);
+    font-size: 14px;
+}
+
+.our-patents__link .icon{
+    margin-left: 13px;
+}
+
+.our-patents__box {
+}
+.out-patents__item {
+}
+
+.out-patents__content.img-box {
+    width: 50%;
+    padding-top: 69%;
+}
+.img-box {
+}
+.col-6 {
+}
+.img {
+}
+/* Our patents section styles END */

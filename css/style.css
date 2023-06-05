@@ -456,18 +456,6 @@
     padding-top: 22px;
 }
 
-.our-patents__inner {
-}
-.our-patents__header {
-}
-.d-flex {
-}
-.justify-content-between {
-}
-.section-title {
-}
-.title-main {
-}
 .our-patents__link {
     color: var(--text-main-color);
     font-size: 14px;
@@ -477,18 +465,66 @@
     margin-left: 13px;
 }
 
-.our-patents__box {
-}
-.out-patents__item {
-}
-
 .out-patents__img-box.img-box {
     padding-top: 144%;
 }
-.img-box {
-}
-.col-6 {
-}
-.img {
-}
 /* Our patents section styles END */
+
+/* Footer styles START */
+.footer {
+    padding-top: 40px;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+@media (min-width: 992px) {
+    .footer{
+        padding-top: 70px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+.footer-top {
+    border-top: 1px solid rgba(228, 228, 228, 1);
+    border-bottom: 1px solid rgba(228, 228, 228, 1);
+    padding: 20px 0;
+}
+
+.footer-top__inner {
+    color: var(--text-main-color);
+}
+.footer-logo {
+}
+
+@media (min-width: 992px) {
+    .f-logo {
+        width: 123px;
+    }
+}
+
+.footer-address p{
+    margin-bottom: 5px;
+}
+.footer-requisites p{
+    margin-bottom: 5px;
+}
+.footer-policy a{
+    color: var(--text-main-color);
+}
+.footer-bottom {
+    padding-top: 20px;
+}
+
+@media (min-width: 992px) {
+    .footer-bottom {
+        padding-top: 32px;
+    }
+}
+
+.footer-bottom__inner {
+}
+.footer-bottom__all-right {
+    color: var(--color-gray);
+}
+/* Footer styles END */

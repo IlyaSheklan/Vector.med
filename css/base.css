@@ -105,3 +105,24 @@ a{
     object-fit: contain;
 }
 /* Images styles END */
+
+/* Another similar component START */
+
+/* Ссылка на показ всех элементов секции */
+.section-detail__link {
+    color: var(--text-main-color);
+    font-size: 14px;
+}
+
+.section-detail__link .icon{
+    margin-left: 13px;
+}
+
+@media (min-width: 768px) {
+    .section-detail__link {
+        font-size: 16px;
+    }
+}
+/* ======= */
+
+/* Another similar component END */

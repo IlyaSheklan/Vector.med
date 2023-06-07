@@ -5,25 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css">
+     <!-- Bootstrap -->
+     <link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css">
 
-    <!-- Swiper -->
-    <link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css">
+     <!-- Swiper -->
+     <link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css">
+ 
+     <!-- Fancybox -->
+     <link rel="stylesheet" href="./libs/fancybox/fancybox.css">
+ 
+     <!-- Styles -->
+     <link rel="stylesheet" href="./css/style.css">
+     <link rel="stylesheet" href="./css/vars.css">
+     <link rel="stylesheet" href="./css/fonts.css">
+     <link rel="stylesheet" href="./css/base.css">
 
-    <!-- Fancybox -->
-    <link rel="stylesheet" href="./libs/fancybox/fancybox.css">
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/vars.css">
-    <link rel="stylesheet" href="./css/fonts.css">
-    <link rel="stylesheet" href="./css/base.css">
-
-    <title>Главная страница</title>
+    <title>Наши патенты</title>
 </head>
 <body>
-
     <div class="wrapper">
         <!-- Header -->
         <div class="position-sticky top-0 z-100" id="headerBox">
@@ -55,8 +54,8 @@
                                 <!-- offcanvas for catalog -->
                                 <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileCatalog" aria-labelledby="mobileCatalogLabel">
                                     <div class="offcanvas-header offcanvas-header-menu">
-                                      <h5 class="offcanvas-title mobile-menu-title" id="mobileCatalogLabel">Каталог</h5>
-                                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        <h5 class="offcanvas-title mobile-menu-title" id="mobileCatalogLabel">Каталог</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                     </div>
                                     <div class="offcanvas-body">
                                         <ul class="nav catalog-nav">
@@ -82,8 +81,8 @@
                                 <!-- offcanvas for menu -->
                                 <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
                                     <div class="offcanvas-header offcanvas-header-menu">
-                                      <h5 class="offcanvas-title mobile-menu-title" id="mobileMenuLabel">Меню</h5>
-                                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        <h5 class="offcanvas-title mobile-menu-title" id="mobileMenuLabel">Меню</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                     </div>
                                     <div class="offcanvas-body">
                                         <nav class="offcanvas__navbar navbar">
@@ -205,262 +204,85 @@
                 </div>
             </div>
         </div>
-
         <main class="main flex-grow-1 flex-shrink-1">
-            <!-- Slider & Category -->
-            <section class="category">
+            <!-- Our patents page -->
+            <section class="patents">
                 <div class="container">
-                    <div class="category__inner row">
-                        <!-- Slider -->
-                        <div class="category-slider col-lg-6">
-                            <div class="category-slider__card">
-                                <div class="category-slider-swiper swiper">
-                                    <div class="swiper-wrapper">
-
-                                        <div class="category-slider__slide swiper-slide">
-                                            <div class="img-box">
-                                                <img class="category-slider__slide-img img" src="./assets/images/main-page/img1.jpg" alt="">
-                                            </div>
-                                            <div class="category-slider__slide-text">
-                                                <h3 class="category-slider__slide-title title-main">Производство и разработка медицинских изделий</h3>
-                                            </div>
-                                        </div>
-
-                                        <div class="category-slider__slide swiper-slide">
-                                            <div class="img-box">
-                                                <img class="category-slider__slide-img img" src="./assets/images/main-page/img2.jpg" alt="">
-                                            </div>
-                                            <div class="category-slider__slide-text">
-                                                <h3 class="category-slider__slide-title title-main">Производство и разработка медицинских изделий</h3>
-                                            </div>
-                                        </div>
-
-                                        <div class="category-slider__slide swiper-slide">
-                                            <div class="img-box">
-                                                <img class="category-slider__slide-img img" src="./assets/images/main-page/img2.webp" alt="">
-                                            </div>
-                                            <div class="category-slider__slide-text">
-                                                <h3 class="category-slider__slide-title title-main">Производство и разработка медицинских изделий</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-pagination category-slider-pagination"></div>
-
-                                    <div class="swiper-button-prev swiper-btn category-slider-btn-prev"></div>
-                                    <div class="swiper-button-next swiper-btn category-slider-btn-next"></div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Category Cards -->
-                        <div class="category-cards col-lg-6">
-                            <a class="category-cards__item" href="#">
-                                <div class="category-cards__content">
-                                    <div class="category-cards__content-text">
-                                        <h3 class="category-cards__content-title title-main">Золотые внутриматочные спирали</h3>
-                                    </div>
-                                    <div class="cards__btn-arrow">
-                                        <svg class="icon right-arrow">
-                                            <use xlink:href="#arrow"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a class="category-cards__item" href="#">
-                                <div class="category-cards__content">
-                                    <div class="category-cards__content-text">
-                                        <h3 class="category-cards__content-title title-main">Серебрянные внутриматочные спирали</h3>
-                                    </div>
-                                    <div class="cards__btn-arrow">
-                                        <svg class="icon right-arrow">
-                                            <use xlink:href="#arrow"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a class="category-cards__item" href="#">
-                                <div class="category-cards__content">
-                                    <div class="category-cards__content-text">
-                                        <h3 class="category-cards__content-title title-main">Внутриматочные спирали с прополисом и календулой</h3>
-                                    </div>
-                                    <div class="cards__btn-arrow">
-                                        <svg class="icon right-arrow">
-                                            <use xlink:href="#arrow"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- About company -->
-            <section class="about">
-                <div class="container">
-                    <h2 class="section-title title-main">АО «Вектор»</h2>
-                    <div class="about__inner row justify-content-center justify-content-md-between">
-                        <div class="about__inner-cards row col-md-8">
-                            <div class="about-card-item col-6">
-                                <div class="about-card-box">
-                                    <h3 class="about-card__title">1988</h3>
-                                    <p class="about-card__text">год основания компании Вектор</p>
-                                </div>
-                            </div>
-                            <div class="about-card-item col-6">
-                                <div class="about-card-box">
-                                    <h3 class="about-card__title">35</h3>
-                                    <p class="about-card__text">лет на рынке</p>
-                                </div>
-                            </div>
-                            <div class="about-card-item col-6">
-                                <div class="about-card-box">
-                                    <h3 class="about-card__title">19</h3>
-                                    <p class="about-card__text">моделей внутриматочных <br> контрацептивов</p>
-                                </div>
-                            </div>
-                            <div class="about-card-item col-6">
-                                <div class="about-card-box">
-                                    <h3 class="about-card__title">25+</h3>
-                                    <p class="about-card__text">созданных медицинских изделий</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="about__inner-img-box col-md-4">
-                            <div class="img-box">
-                                <img class="about-img img" src="./assets/images/main-page/img1.jpg" alt="img">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Our-patents -->
-            <section class="our-patents">
-                <div class="container">
-                    <div class="our-patents__inner">
-                        <div class="our-patents__header d-flex justify-content-between">
-                            <h2 class="section-title title-main">Наши патенты</h2>
-                            <a href="./our-patents.html" class="section-detail__link">
-                                Все патенты
-                                <svg class="icon right-arrow">
-                                    <use xlink:href="#arrow"></use>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="our-patents__box">
-                            <div class="our-patents__item row">
-                                <a class="our-patents__content col-6 col-custom-2" href="./assets/images/main-page/patent1.jpg" data-fancybox="gallery">
+                    <div class="patents__inner">
+                        <h2 class="section-title title-main">Наши патенты</h2>
+                        <div class="patents__box">
+                            <div class="patents__item row">
+                                <a class="our-patents__content col-6 col-md-3" href="./assets/images/main-page/patent1.jpg" data-fancybox="gallery">
                                     <div class="our-patents__img-box img-box">
                                         <img class="img" src="./assets/images/main-page/patent1.jpg" alt="patent1">
                                     </div>
                                 </a>
 
-                                <a class="our-patents__content col-6 col-custom-2" href="./assets/images/main-page/patent1.jpg" data-fancybox="gallery">
+                                <a class="our-patents__content col-6 col-md-3" href="./assets/images/main-page/patent1.jpg" data-fancybox="gallery">
                                     <div class="our-patents__img-box img-box">
                                         <img class="img" src="./assets/images/main-page/patent1.jpg" alt="patent1">
                                     </div>
                                 </a>
 
-                                <a class="our-patents__content col-6 col-custom-2" href="./assets/images/main-page/patent1.jpg" data-fancybox="gallery">
+                                <a class="our-patents__content col-6 col-md-3" href="./assets/images/main-page/patent1.jpg" data-fancybox="gallery">
                                     <div class="our-patents__img-box img-box">
                                         <img class="img" src="./assets/images/main-page/patent1.jpg" alt="patent1">
                                     </div>
                                 </a>
 
-                                <a class="our-patents__content col-6 col-custom-2" href="./assets/images/main-page/patent1.jpg" data-fancybox="gallery">
+                                <a class="our-patents__content col-6 col-md-3" href="./assets/images/main-page/patent1.jpg" data-fancybox="gallery">
                                     <div class="our-patents__img-box img-box">
                                         <img class="img" src="./assets/images/main-page/patent1.jpg" alt="patent1">
                                     </div>
                                 </a>
 
-                                <a class="our-patents__content col-6 col-custom-2" href="./assets/images/main-page/patent1.jpg" data-fancybox="gallery">
+                                <a class="our-patents__content col-6 col-md-3" href="./assets/images/main-page/patent1.jpg" data-fancybox="gallery">
+                                    <div class="our-patents__img-box img-box">
+                                        <img class="img" src="./assets/images/main-page/patent1.jpg" alt="patent1">
+                                    </div>
+                                </a>
+
+                                <a class="our-patents__content col-6 col-md-3" href="./assets/images/main-page/patent1.jpg" data-fancybox="gallery">
+                                    <div class="our-patents__img-box img-box">
+                                        <img class="img" src="./assets/images/main-page/patent1.jpg" alt="patent1">
+                                    </div>
+                                </a>
+
+                                <a class="our-patents__content col-6 col-md-3" href="./assets/images/main-page/patent1.jpg" data-fancybox="gallery">
+                                    <div class="our-patents__img-box img-box">
+                                        <img class="img" src="./assets/images/main-page/patent1.jpg" alt="patent1">
+                                    </div>
+                                </a>
+
+                                <a class="our-patents__content col-6 col-md-3" href="./assets/images/main-page/patent1.jpg" data-fancybox="gallery">
+                                    <div class="our-patents__img-box img-box">
+                                        <img class="img" src="./assets/images/main-page/patent1.jpg" alt="patent1">
+                                    </div>
+                                </a>
+
+                                <a class="our-patents__content col-6 col-md-3" href="./assets/images/main-page/patent1.jpg" data-fancybox="gallery">
+                                    <div class="our-patents__img-box img-box">
+                                        <img class="img" src="./assets/images/main-page/patent1.jpg" alt="patent1">
+                                    </div>
+                                </a>
+
+                                <a class="our-patents__content col-6 col-md-3" href="./assets/images/main-page/patent1.jpg" data-fancybox="gallery">
+                                    <div class="our-patents__img-box img-box">
+                                        <img class="img" src="./assets/images/main-page/patent1.jpg" alt="patent1">
+                                    </div>
+                                </a>
+
+                                <a class="our-patents__content col-6 col-md-3" href="./assets/images/main-page/patent1.jpg" data-fancybox="gallery">
                                     <div class="our-patents__img-box img-box">
                                         <img class="img" src="./assets/images/main-page/patent1.jpg" alt="patent1">
                                     </div>
                                 </a>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Articles -->
-            <section class="articles">
-                <div class="container">
-                    <div class="articles__inner">
-                        <div class="articles__header d-flex justify-content-between">
-                            <h2 class="section-title title-main">Статьи</h2>
-                            <a href="/articles.html" class="section-detail__link">
-                                Все статьи
-                                <svg class="icon right-arrow">
-                                    <use xlink:href="#arrow"></use>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="articles-cards">
-                            <a class="category-cards__item cards__item--wide" href="./articles-single.html">
-                                <div class="category-cards__content flex-md-row flex-column-reverse">
-                                    <div class="articles-cards__content-box d-flex justify-content-between flex-column">
-                                        <div class="category-cards__content-text">
-                                            <p class="articles-cards__content-date">7 апреля 2018</p>
-                                            <h3 class="articles-cards__content-title title-main">Статья 1</h3>
-                                        </div>
-                                        <div class="cards__btn-arrow">
-                                            <svg class="icon right-arrow">
-                                                <use xlink:href="#arrow"></use>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="articles-cards__item-img-box img-box">
-                                        <img class="articles-cards__img img" src="./assets/images/main-page/img1.jpg" alt="">
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a class="category-cards__item" href="#">
-                                <div class="category-cards__content flex-md-row flex-column-reverse">
-                                    <div class="articles-cards__content-box d-flex justify-content-between flex-column">
-                                        <div class="category-cards__content-text">
-                                            <p class="articles-cards__content-date">7 апреля 2018</p>
-                                            <h3 class="articles-cards__content-title title-main">Статья 1</h3>
-                                        </div>
-                                        <div class="cards__btn-arrow">
-                                            <svg class="icon right-arrow">
-                                                <use xlink:href="#arrow"></use>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="articles-cards__item-img-box img-box">
-                                        <img class="articles-cards__img img" src="./assets/images/main-page/img1.jpg" alt="">
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a class="category-cards__item" href="#">
-                                <div class="category-cards__content flex-md-row flex-column-reverse">
-                                    <div class="articles-cards__content-box d-flex justify-content-between flex-column">
-                                        <div class="category-cards__content-text">
-                                            <p class="articles-cards__content-date">7 апреля 2018</p>
-                                            <h3 class="articles-cards__content-title title-main">Статья 1</h3>
-                                        </div>
-                                        <div class="cards__btn-arrow">
-                                            <svg class="icon right-arrow">
-                                                <use xlink:href="#arrow"></use>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="articles-cards__item-img-box img-box">
-                                        <img class="articles-cards__img img" src="./assets/images/main-page/img1.jpg" alt="">
-                                    </div>
-                                </div>
-                            </a>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
-
         <!-- Footer -->
         <footer class="footer">
             <div class="footer-top">
@@ -476,7 +298,7 @@
                             <p>Телефон/факс: (8639) 26-84-96, 26-86-31, 26-86-39</p>
                             <p>E-mail: vektor@vektor-med.ru</p>
                         </div>
-                        <div class="footer-requisites mb-3 mb-lg-0 col-lg-3">
+                        <div class="footer-requisites mb-3 col-lg-3">
                             <p>ИНН: 6143016200</p>
                             <p>КПП: 614301001</p>
                             <p>Р/с: 40702810352160100365</p>

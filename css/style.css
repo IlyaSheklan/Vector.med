@@ -486,7 +486,7 @@
     }
 }
 
-.out-patents__img-box.img-box {
+.our-patents__img-box.img-box {
     padding-top: 144%;
 }
 
@@ -647,6 +647,28 @@
 }
 
 /* ==DETAIL ARTICLE PAGE END== */
+
+/* ==OUR PATENTS PAGE START== */
+.patents{
+    padding-top: 40px;
+}
+
+@media (min-width: 768px) {
+    .patents{
+        padding-top: 50px;
+    }
+}
+
+.patents__inner .section-title.title-main{
+    margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+    .patents__inner .section-title.title-main{
+        margin-bottom: 30px;
+    }
+}
+/* ==OUR PATENTS PAGE END== */
 
 /* Footer styles START */
 .footer {

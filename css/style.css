@@ -374,6 +374,28 @@
 .category-slider-pagination .swiper-pagination-bullet-active{
     background: var(--text-main-color);
 }
+
+.swiper-btn{
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.swiper-btn::after{
+    content: '';
+}
+
+.category-slider-btn-prev{
+    background-image: url('/assets/icons/left-arrow.svg');
+}
+
+.category-slider-btn-next{
+    background-image: url('/assets/icons/right-arrow.svg');
+}
 /* Slider END */
 
 /* Cards START */

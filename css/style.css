@@ -680,7 +680,10 @@
     margin-bottom: 10px;
 }
 
-.our-people__box {
+@media (min-width: 768px) {
+    .our-inventor__inner .section-title {
+        margin-bottom: 20px;
+    }
 }
 
 .our-people__item {
@@ -693,8 +696,13 @@
     border-radius: 12px;
     border-color: #E4E4E4;
 }
-.card {
+
+@media (min-width: 992px) {
+    .our-people__card {
+        padding: 30px;
+    }
 }
+
 .our-people__img-box.img-box {
     padding-top: 112%;
     margin-bottom: 20px;
@@ -704,16 +712,20 @@
     .our-people__img-box.img-box {
         padding-top: 0%;
         max-width: 220px;
-        height: 225px;
+        height: auto;
         margin-bottom: 0;
+        margin-right: 20px;
     }
 }
 
-.img-box {
+@media (min-width: 992px) {
+    .our-people__img-box.img-box {
+        height: 225px;
+    }
 }
-.card-img-top {
-}
-.img {
+
+.our-people__img-box .img {
+    object-fit: cover;
 }
 .our-people__item .card-body {
     padding: 0;

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css">
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css">
+
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="./libs/fancybox/fancybox.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/vars.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/base.css">
+
+    <title>Статья 1</title>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+        <div class="position-sticky top-0 z-100" id="headerBox">
+            <header class="header">
+                <!-- Top -->
+                <div class="header__top">
+                    <div class="container">
+                        <div class="header__top-inner d-flex justify-content-between align-items-center">
+                            <!-- Desctop -->
+                            <div class="header__logo">
+                                <a href="/">
+                                    <img src="./assets/logo/logo-header.svg" alt="logo" class="head-logo">
+                                </a>
+                            </div>
+                            <div class="header__contact d-none d-md-block">
+                                <a href="mailto:vektor@vektor-med.ru" class="contact-email pe-3">vektor@vektor-med.ru</a>
+                                <a href="tel:+88639268496" class="contact-phone">8 (8639) 26-84-96</a>
+                            </div>
+                            <!-- ====== -->
+                            <!-- Mobile -->
+                            <div class="header__bottom-mobile d-flex align-items-center d-md-none">
+                                <a href="#" class="header__catalog-link d-flex align-items-center pe-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileCatalog" aria-controls="mobileCatalog">
+                                    <svg class="icon me-2">
+                                        <use xlink:href="#catalog-item"></use>
+                                    </svg>
+                                    <span>Каталог</span>
+                                </a>
+
+                                <!-- offcanvas for catalog -->
+                                <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileCatalog" aria-labelledby="mobileCatalogLabel">
+                                    <div class="offcanvas-header offcanvas-header-menu">
+                                        <h5 class="offcanvas-title mobile-menu-title" id="mobileCatalogLabel">Каталог</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <ul class="nav catalog-nav">
+                                            <li><a class="catalog-item" href="#">Золотые внутриматочные спирали</a></li>
+                                            <li><a class="catalog-item" href="#">Серебряные внутриматочные спирали</a></li>
+                                            <li><a class="catalog-item" href="#">Внутриматочные спирали с прополисом и календулой</a></li>
+                                            <li><a class="catalog-item" href="#">Кольцеобразные внутриматочные спирали</a></li>
+                                            <li><a class="catalog-item" href="#">Ф-образные внутриматочные спирали (аналог "Мультилоад")</a></li>
+                                            <li><a class="catalog-item" href="#">Т-образные внутриматочные спирали</a></li>
+                                            <li><a class="catalog-item" href="#">Устройство для внутриматочной биопсии УВБ - «Вектор»</a></li>
+                                            <li><a class="catalog-item" href="#">Аспиратор вакуумный мануальный АВМ - "Вектор"</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- ====== -->
+
+                                <a href="#" class="header-btn-burger" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+                                    <span class="burger-line"></span>
+                                    <span class="burger-line"></span>
+                                    <span class="burger-line"></span>
+                                </a>
+
+                                <!-- offcanvas for menu -->
+                                <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+                                    <div class="offcanvas-header offcanvas-header-menu">
+                                        <h5 class="offcanvas-title mobile-menu-title" id="mobileMenuLabel">Меню</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <nav class="offcanvas__navbar navbar">
+                                            <ul class="offcanvas__navbar-list nav flex-column">
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <span>О компании</span>
+                                                        <svg class="icon arrow">
+                                                            <use xlink:href="#menu-arrow"></use>
+                                                        </svg>
+                                                    </a>
+                                                    <ul class="dropdown-menu dropdown-menu-mobile">
+                                                        <li><a class="dropdown-item" href="#">Наши патенты</a></li>
+                                                        <li><a class="dropdown-item" href="#">Наши изобретатели</a></li>
+                                                        <li><a class="dropdown-item" href="#">Наше руководство</a></li>
+                                                        <li><a class="dropdown-item" href="/articles.html">Статьи</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <span>B2B</span>
+                                                        <svg class="icon arrow">
+                                                            <use xlink:href="#menu-arrow"></use>
+                                                        </svg>
+                                                    </a>
+                                                    <ul class="dropdown-menu dropdown-menu-mobile">
+                                                        <li><a class="dropdown-item" href="#">Коммерческое предложение</a></li>
+                                                        <li><a class="dropdown-item" href="#">Оплата</a></li>
+                                                        <li><a class="dropdown-item" href="#">Доставка</a></li>
+                                                        <li><a class="dropdown-item" href="#">Реквизиты</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="nav-link">
+                                                        Контакты
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                                <!-- ====== -->
+                            <!-- ====== -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bottom -->
+                <div class="header__bottom d-none d-md-block">
+                    <div class="container">
+                        <div class="header__bottom-inner d-flex align-items-center">
+                            <a href="#" class="header__catalog-link d-none d-md-flex align-items-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#catalogMenu" aria-controls="catalogMenu">
+                                <svg class="icon me-2">
+                                    <use xlink:href="#catalog-item"></use>
+                                </svg>
+                                <span>Каталог продукции</span>
+                            </a>
+                            
+                            <!-- Navigation -->
+                            <nav class="header__navbar navbar d-none d-md-block ms-3">
+                                <ul class="header__navbar-list nav">
+                                    <li class="list-item">
+                                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <span>О компании</span>
+                                            <svg class="icon arrow">
+                                                <use xlink:href="#menu-arrow"></use>
+                                            </svg>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-company">
+                                            <li><a class="dropdown-item" href="#">Наши патенты</a></li>
+                                            <li><a class="dropdown-item" href="#">Наши изобретатели</a></li>
+                                            <li><a class="dropdown-item" href="#">Наше руководство</a></li>
+                                            <li><a class="dropdown-item" href="/articles.html">Статьи</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <span>B2B</span>
+                                            <svg class="icon arrow">
+                                                <use xlink:href="#menu-arrow"></use>
+                                            </svg>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-b2b">
+                                            <li><a class="dropdown-item" href="#">Коммерческое предложение</a></li>
+                                            <li><a class="dropdown-item" href="#">Оплата</a></li>
+                                            <li><a class="dropdown-item" href="#">Доставка</a></li>
+                                            <li><a class="dropdown-item" href="#">Реквизиты</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#" class="nav-link">
+                                            Контакты
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <!-- ======= -->
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="offcanvas offcanvas-top offcanvas-catalog" tabindex="-1" id="catalogMenu" aria-labelledby="catalogMenuLabel">
+                <div class="container d-flex flex-row-reverse">
+                    <div class="offcanvas-header d-block">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="nav catalog-nav flex-column">
+                            <li><a class="catalog-item" href="#">Золотые внутриматочные спирали</a></li>
+                            <li><a class="catalog-item" href="#">Серебряные внутриматочные спирали</a></li>
+                            <li><a class="catalog-item" href="#">Внутриматочные спирали с прополисом и календулой</a></li>
+                            <li><a class="catalog-item" href="#">Кольцеобразные внутриматочные спирали</a></li>
+                            <li><a class="catalog-item" href="#">Ф-образные внутриматочные спирали (аналог "Мультилоад")</a></li>
+                            <li><a class="catalog-item" href="#">Т-образные внутриматочные спирали</a></li>
+                            <li><a class="catalog-item" href="#">Устройство для внутриматочной биопсии УВБ - «Вектор»</a></li>
+                            <li><a class="catalog-item" href="#">Аспиратор вакуумный мануальный АВМ - "Вектор"</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main class="main flex-grow-1 flex-shrink-1">
+            <!-- Single detail article -->
+            <section class="detail-article">
+                <div class="container">
+                    <div class="detail-article__inner">
+                        <h2 class="section-title title-main">Статья 1</h2>
+                        <p class="articles-cards__content-date">7 апреля 2018</p>
+
+                        <div class="detail-article__content row flex-md-row-reverse">
+                            <div class="detail-article__content-img-box img-box col-md-5">
+                                <img class="img" src="./assets/images/main-page/img3.jpg" alt="">
+                            </div>
+                            <div class="detail-article__content-text col-md-7">
+                                <p>
+                                    Задача организации, в особенности же реализация намеченных плановых заданий позволяет оценить значение модели развития. 
+                                    С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании форм развития. 
+                                    Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание форм развития. 
+                                    Равным образом укрепление и развитие структуры способствует подготовки и реализации соответствующий условий активизации.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="footer-top__inner row">
+                        <div class="footer-logo mb-3 mb-lg-0 col-lg-3">
+                            <a href="/">
+                                <img class="f-logo" src="./assets/logo/logo-footer.svg" alt="Логотип для подвала">
+                            </a>
+                        </div>
+                        <div class="footer-address mb-3 mb-lg-0 col-lg-3">
+                            <p>347369, Россия, Ростовская область, г. Волгодонск, ул. Железнодорожная, 94</p>
+                            <p>Телефон/факс: (8639) 26-84-96, 26-86-31, 26-86-39</p>
+                            <p>E-mail: vektor@vektor-med.ru</p>
+                        </div>
+                        <div class="footer-requisites mb-3 col-lg-3">
+                            <p>ИНН: 6143016200</p>
+                            <p>КПП: 614301001</p>
+                            <p>Р/с: 40702810352160100365</p>
+                            <p>К/с: 30101810600000000602</p>
+                            <p>БИК: 046015602</p>
+                        </div>
+                        <div class="footer-policy col-lg-3 mb-lg-0 text-lg-end">
+                            <a href="#">Политика конфиденциальности</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="footer-bottom__inner">
+                        <div class="footer-bottom__all-right">
+                            <p>© АО “Вектор”, 2018-2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Icons -->
+            <svg width="0" height="0" class="hidden">
+                <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="catalog-item">
+                  <path d="M0 1.81818C0 0.814028 0.814028 0 1.81818 0H7.27273C8.27688 0 9.09091 0.814028 9.09091 1.81818V7.27273C9.09091 8.27688 8.27688 9.09091 7.27273 9.09091H1.81818C0.814028 9.09091 0 8.27688 0 7.27273V1.81818Z" fill="#005ED2"></path>
+                  <path d="M10.9091 1.81818C10.9091 0.814028 11.7231 0 12.7273 0H18.1818C19.186 0 20 0.814028 20 1.81818V7.27273C20 8.27688 19.186 9.09091 18.1818 9.09091H12.7273C11.7231 9.09091 10.9091 8.27688 10.9091 7.27273V1.81818Z" fill="#005ED2"></path>
+                  <path d="M0 12.7273C0 11.7231 0.814028 10.9091 1.81818 10.9091H7.27273C8.27688 10.9091 9.09091 11.7231 9.09091 12.7273V18.1818C9.09091 19.186 8.27688 20 7.27273 20H1.81818C0.814028 20 0 19.186 0 18.1818V12.7273Z" fill="#005ED2"></path>
+                  <path d="M10.9091 12.7273C10.9091 11.7231 11.7231 10.9091 12.7273 10.9091H18.1818C19.186 10.9091 20 11.7231 20 12.7273V18.1818C20 19.186 19.186 20 18.1818 20H12.7273C11.7231 20 10.9091 19.186 10.9091 18.1818V12.7273Z" fill="#005ED2"></path>
+                </symbol>
+
+                <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6" id="menu-arrow">
+                    <path d="M8.95866 1.41669L7.57537 2.81237C6.47223 3.9254 5.92066 4.48192 5.24838 4.56761C5.08367 4.5886 4.91699 4.5886 4.75227 4.56761C4.07999 4.48192 3.52842 3.9254 2.42528 2.81237L1.04199 1.41669" stroke="#182B3F" stroke-width="1.5" stroke-linecap="round"></path>
+                </symbol>
+
+                <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 12" id="arrow">
+                    <path d="M1 5.25C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41422 0.585786 6.75 1 6.75L1 5.25ZM17 6.75C17.4142 6.75 17.75 6.41421 17.75 6C17.75 5.58579 17.4142 5.25 17 5.25V6.75ZM13.528 0.467309C13.2338 0.175726 12.7589 0.177844 12.4673 0.472041C12.1757 0.766238 12.1778 1.24111 12.472 1.53269L13.528 0.467309ZM14.763 2.74731L14.235 3.28L14.763 2.74731ZM14.763 9.25269L15.2909 9.78538L14.763 9.25269ZM12.472 10.4673C12.1778 10.7589 12.1757 11.2338 12.4673 11.528C12.7589 11.8222 13.2338 11.8243 13.528 11.5327L12.472 10.4673ZM16.9801 5.68667L17.7241 5.59184V5.59184L16.9801 5.68667ZM16.9801 6.31333L17.7241 6.40816V6.40816L16.9801 6.31333ZM1 6.75L17 6.75V5.25L1 5.25L1 6.75ZM12.472 1.53269L14.235 3.28L15.2909 2.21462L13.528 0.467309L12.472 1.53269ZM14.235 8.72L12.472 10.4673L13.528 11.5327L15.2909 9.78538L14.235 8.72ZM14.235 3.28C14.9505 3.98914 15.4413 4.47718 15.7734 4.8907C16.096 5.2924 16.2067 5.55042 16.2361 5.7815L17.7241 5.59184C17.6453 4.97372 17.3504 4.45878 16.9429 3.95146C16.545 3.45597 15.9814 2.89892 15.2909 2.21462L14.235 3.28ZM15.2909 9.78538C15.9814 9.10108 16.545 8.54403 16.9429 8.04854C17.3504 7.54121 17.6453 7.02628 17.7241 6.40816L16.2361 6.2185C16.2067 6.44958 16.096 6.7076 15.7734 7.10929C15.4413 7.52282 14.9505 8.01086 14.235 8.72L15.2909 9.78538ZM16.2361 5.7815C16.2546 5.92659 16.2546 6.07341 16.2361 6.2185L17.7241 6.40816C17.7586 6.13714 17.7586 5.86286 17.7241 5.59184L16.2361 5.7815Z" fill="#182B3F"></path>
+                </symbol>
+            </svg>
+        </footer>
+    </div>
+    
+     <!-- Bootstrap -->
+     <script src="./libs/bootstrap/bootstrap.bundle.min.js"></script>
+
+     <!-- Swiper -->
+     <script src="./libs/swiper/swiper-bundle.min.js"></script>
+
+     <!-- Fancybox -->
+     <script src="./libs/fancybox/fancybox.umd.js"></script>
+ 
+     <!-- Scripts -->
+     <script src="./js/main.js"></script>
+</body>
+</html>

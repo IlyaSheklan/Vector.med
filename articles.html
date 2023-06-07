@@ -5,25 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css">
+     <!-- Bootstrap -->
+     <link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css">
 
-    <!-- Swiper -->
-    <link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css">
+     <!-- Swiper -->
+     <link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css">
+ 
+     <!-- Fancybox -->
+     <link rel="stylesheet" href="./libs/fancybox/fancybox.css">
+ 
+     <!-- Styles -->
+     <link rel="stylesheet" href="./css/style.css">
+     <link rel="stylesheet" href="./css/vars.css">
+     <link rel="stylesheet" href="./css/fonts.css">
+     <link rel="stylesheet" href="./css/base.css">
 
-    <!-- Fancybox -->
-    <link rel="stylesheet" href="./libs/fancybox/fancybox.css">
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/vars.css">
-    <link rel="stylesheet" href="./css/fonts.css">
-    <link rel="stylesheet" href="./css/base.css">
-
-    <title>Главная страница</title>
+    <title>Статьи</title>
 </head>
 <body>
-
     <div class="wrapper">
         <!-- Header -->
         <div class="position-sticky top-0 z-100" id="headerBox">
@@ -141,6 +140,26 @@
                                 </svg>
                                 <span>Каталог продукции</span>
                             </a>
+    
+                            <div class="offcanvas offcanvas-top offcanvas-catalog" tabindex="-1" id="catalogMenu" aria-labelledby="catalogMenuLabel">
+                                <div class="container">
+                                    <div class="offcanvas-header justify-content-end">
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <ul class="nav catalog-nav flex-column">
+                                            <li><a class="catalog-item" href="#">Золотые внутриматочные спирали</a></li>
+                                            <li><a class="catalog-item" href="#">Серебряные внутриматочные спирали</a></li>
+                                            <li><a class="catalog-item" href="#">Внутриматочные спирали с прополисом и календулой</a></li>
+                                            <li><a class="catalog-item" href="#">Кольцеобразные внутриматочные спирали</a></li>
+                                            <li><a class="catalog-item" href="#">Ф-образные внутриматочные спирали (аналог "Мультилоад")</a></li>
+                                            <li><a class="catalog-item" href="#">Т-образные внутриматочные спирали</a></li>
+                                            <li><a class="catalog-item" href="#">Устройство для внутриматочной биопсии УВБ - «Вектор»</a></li>
+                                            <li><a class="catalog-item" href="#">Аспиратор вакуумный мануальный АВМ - "Вектор"</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                             
                             <!-- Navigation -->
                             <nav class="header__navbar navbar d-none d-md-block ms-3">
@@ -185,220 +204,118 @@
                     </div>
                 </div>
             </header>
-            <div class="offcanvas offcanvas-top offcanvas-catalog" tabindex="-1" id="catalogMenu" aria-labelledby="catalogMenuLabel">
-                <div class="container d-flex flex-row-reverse">
-                    <div class="offcanvas-header d-block">
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="nav catalog-nav flex-column">
-                            <li><a class="catalog-item" href="#">Золотые внутриматочные спирали</a></li>
-                            <li><a class="catalog-item" href="#">Серебряные внутриматочные спирали</a></li>
-                            <li><a class="catalog-item" href="#">Внутриматочные спирали с прополисом и календулой</a></li>
-                            <li><a class="catalog-item" href="#">Кольцеобразные внутриматочные спирали</a></li>
-                            <li><a class="catalog-item" href="#">Ф-образные внутриматочные спирали (аналог "Мультилоад")</a></li>
-                            <li><a class="catalog-item" href="#">Т-образные внутриматочные спирали</a></li>
-                            <li><a class="catalog-item" href="#">Устройство для внутриматочной биопсии УВБ - «Вектор»</a></li>
-                            <li><a class="catalog-item" href="#">Аспиратор вакуумный мануальный АВМ - "Вектор"</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
         </div>
-
-        <main class="main flex-grow-1 flex-shrink-1">
-            <!-- Slider & Category -->
-            <section class="category">
-                <div class="container">
-                    <div class="category__inner row">
-                        <!-- Slider -->
-                        <div class="category-slider col-lg-6">
-                            <div class="category-slider__card">
-                                <div class="category-slider-swiper swiper">
-                                    <div class="swiper-wrapper">
-
-                                        <div class="category-slider__slide swiper-slide">
-                                            <div class="img-box">
-                                                <img class="category-slider__slide-img img" src="./assets/images/main-page/img1.jpg" alt="">
-                                            </div>
-                                            <div class="category-slider__slide-text">
-                                                <h3 class="category-slider__slide-title title-main">Производство и разработка медицинских изделий</h3>
-                                            </div>
-                                        </div>
-
-                                        <div class="category-slider__slide swiper-slide">
-                                            <div class="img-box">
-                                                <img class="category-slider__slide-img img" src="./assets/images/main-page/img2.jpg" alt="">
-                                            </div>
-                                            <div class="category-slider__slide-text">
-                                                <h3 class="category-slider__slide-title title-main">Производство и разработка медицинских изделий</h3>
-                                            </div>
-                                        </div>
-
-                                        <div class="category-slider__slide swiper-slide">
-                                            <div class="img-box">
-                                                <img class="category-slider__slide-img img" src="./assets/images/main-page/img2.webp" alt="">
-                                            </div>
-                                            <div class="category-slider__slide-text">
-                                                <h3 class="category-slider__slide-title title-main">Производство и разработка медицинских изделий</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-pagination category-slider-pagination"></div>
-
-                                    <div class="swiper-button-prev category-slider-btn-prev"></div>
-                                    <div class="swiper-button-next category-slider-btn-next"></div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Category Cards -->
-                        <div class="category-cards col-lg-6">
-                            <a class="category-cards__item" href="#">
-                                <div class="category-cards__content">
-                                    <div class="category-cards__content-text">
-                                        <h3 class="category-cards__content-title title-main">Золотые внутриматочные спирали</h3>
-                                    </div>
-                                    <div class="cards__btn-arrow">
-                                        <svg class="icon right-arrow">
-                                            <use xlink:href="#arrow"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a class="category-cards__item" href="#">
-                                <div class="category-cards__content">
-                                    <div class="category-cards__content-text">
-                                        <h3 class="category-cards__content-title title-main">Серебрянные внутриматочные спирали</h3>
-                                    </div>
-                                    <div class="cards__btn-arrow">
-                                        <svg class="icon right-arrow">
-                                            <use xlink:href="#arrow"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a class="category-cards__item" href="#">
-                                <div class="category-cards__content">
-                                    <div class="category-cards__content-text">
-                                        <h3 class="category-cards__content-title title-main">Внутриматочные спирали с прополисом и календулой</h3>
-                                    </div>
-                                    <div class="cards__btn-arrow">
-                                        <svg class="icon right-arrow">
-                                            <use xlink:href="#arrow"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- About company -->
-            <section class="about">
-                <div class="container">
-                    <h2 class="section-title title-main">АО «Вектор»</h2>
-                    <div class="about__inner row justify-content-center justify-content-md-between">
-                        <div class="about__inner-cards row col-md-8">
-                            <div class="about-card-item col-6">
-                                <div class="about-card-box">
-                                    <h3 class="about-card__title">1988</h3>
-                                    <p class="about-card__text">год основания компании Вектор</p>
-                                </div>
-                            </div>
-                            <div class="about-card-item col-6">
-                                <div class="about-card-box">
-                                    <h3 class="about-card__title">35</h3>
-                                    <p class="about-card__text">лет на рынке</p>
-                                </div>
-                            </div>
-                            <div class="about-card-item col-6">
-                                <div class="about-card-box">
-                                    <h3 class="about-card__title">19</h3>
-                                    <p class="about-card__text">моделей внутриматочных <br> контрацептивов</p>
-                                </div>
-                            </div>
-                            <div class="about-card-item col-6">
-                                <div class="about-card-box">
-                                    <h3 class="about-card__title">25+</h3>
-                                    <p class="about-card__text">созданных медицинских изделий</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="about__inner-img-box col-md-4">
-                            <div class="img-box">
-                                <img class="about-img img" src="./assets/images/main-page/img1.jpg" alt="img">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Our-patents -->
-            <section class="our-patents">
-                <div class="container">
-                    <div class="our-patents__inner">
-                        <div class="our-patents__header d-flex justify-content-between">
-                            <h2 class="section-title title-main">Наши патенты</h2>
-                            <a href="#" class="section-detail__link">
-                                Все патенты
-                                <svg class="icon right-arrow">
-                                    <use xlink:href="#arrow"></use>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="our-patents__box">
-                            <div class="out-patents__item row">
-                                <a class="out-patents__content col-6 col-custom-2" href="./assets/images/main-page/patent1.jpg" data-fancybox="gallery">
-                                    <div class="out-patents__img-box img-box">
-                                        <img class="img" src="./assets/images/main-page/patent1.jpg" alt="patent1">
-                                    </div>
-                                </a>
-
-                                <a class="out-patents__content col-6 col-custom-2" href="./assets/images/main-page/patent1.jpg" data-fancybox="gallery">
-                                    <div class="out-patents__img-box img-box">
-                                        <img class="img" src="./assets/images/main-page/patent1.jpg" alt="patent1">
-                                    </div>
-                                </a>
-
-                                <a class="out-patents__content col-6 col-custom-2" href="./assets/images/main-page/patent1.jpg" data-fancybox="gallery">
-                                    <div class="out-patents__img-box img-box">
-                                        <img class="img" src="./assets/images/main-page/patent1.jpg" alt="patent1">
-                                    </div>
-                                </a>
-
-                                <a class="out-patents__content col-6 col-custom-2" href="./assets/images/main-page/patent1.jpg" data-fancybox="gallery">
-                                    <div class="out-patents__img-box img-box">
-                                        <img class="img" src="./assets/images/main-page/patent1.jpg" alt="patent1">
-                                    </div>
-                                </a>
-
-                                <a class="out-patents__content col-6 col-custom-2" href="./assets/images/main-page/patent2.jpg" data-fancybox="gallery">
-                                    <div class="out-patents__img-box img-box">
-                                        <img class="img" src="./assets/images/main-page/patent2.jpg" alt="patent1">
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Articles -->
+        <div class="main flex-grow-1 flex-shrink-1">
             <section class="articles">
                 <div class="container">
                     <div class="articles__inner">
                         <div class="articles__header d-flex justify-content-between">
                             <h2 class="section-title title-main">Статьи</h2>
-                            <a href="/articles.html" class="section-detail__link">
-                                Все статьи
-                                <svg class="icon right-arrow">
-                                    <use xlink:href="#arrow"></use>
-                                </svg>
-                            </a>
                         </div>
                         <div class="articles-cards">
+                            <a class="category-cards__item cards__item--wide" href="#">
+                                <div class="category-cards__content flex-md-row flex-column-reverse">
+                                    <div class="articles-cards__content-box d-flex justify-content-between flex-column">
+                                        <div class="category-cards__content-text">
+                                            <p class="articles-cards__content-date">7 апреля 2018</p>
+                                            <h3 class="articles-cards__content-title title-main">Статья 1</h3>
+                                        </div>
+                                        <div class="cards__btn-arrow">
+                                            <svg class="icon right-arrow">
+                                                <use xlink:href="#arrow"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="articles-cards__item-img-box img-box">
+                                        <img class="articles-cards__img img" src="./assets/images/main-page/img1.jpg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="category-cards__item" href="#">
+                                <div class="category-cards__content">
+                                    <div class="category-cards__content-text">
+                                        <p class="articles-cards__content-date">7 апреля 2018</p>
+                                        <h3 class="articles-cards__content-title title-main">Статья 2</h3>
+                                    </div>
+                                    <div class="cards__btn-arrow">
+                                        <svg class="icon right-arrow">
+                                            <use xlink:href="#arrow"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="category-cards__item" href="#">
+                                <div class="category-cards__content">
+                                    <div class="category-cards__content-text">
+                                        <p class="articles-cards__content-date">7 апреля 2018</p>
+                                        <h3 class="articles-cards__content-title title-main">Статья 3</h3>
+                                    </div>
+                                    <div class="cards__btn-arrow">
+                                        <svg class="icon right-arrow">
+                                            <use xlink:href="#arrow"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="category-cards__item" href="#">
+                                <div class="category-cards__content">
+                                    <div class="category-cards__content-text">
+                                        <p class="articles-cards__content-date">7 апреля 2018</p>
+                                        <h3 class="articles-cards__content-title title-main">Статья 2</h3>
+                                    </div>
+                                    <div class="cards__btn-arrow">
+                                        <svg class="icon right-arrow">
+                                            <use xlink:href="#arrow"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="category-cards__item" href="#">
+                                <div class="category-cards__content">
+                                    <div class="category-cards__content-text">
+                                        <p class="articles-cards__content-date">7 апреля 2018</p>
+                                        <h3 class="articles-cards__content-title title-main">Статья 2</h3>
+                                    </div>
+                                    <div class="cards__btn-arrow">
+                                        <svg class="icon right-arrow">
+                                            <use xlink:href="#arrow"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="category-cards__item" href="#">
+                                <div class="category-cards__content">
+                                    <div class="category-cards__content-text">
+                                        <p class="articles-cards__content-date">7 апреля 2018</p>
+                                        <h3 class="articles-cards__content-title title-main">Статья 2</h3>
+                                    </div>
+                                    <div class="cards__btn-arrow">
+                                        <svg class="icon right-arrow">
+                                            <use xlink:href="#arrow"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="category-cards__item" href="#">
+                                <div class="category-cards__content">
+                                    <div class="category-cards__content-text">
+                                        <p class="articles-cards__content-date">7 апреля 2018</p>
+                                        <h3 class="articles-cards__content-title title-main">Статья 2</h3>
+                                    </div>
+                                    <div class="cards__btn-arrow">
+                                        <svg class="icon right-arrow">
+                                            <use xlink:href="#arrow"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+
                             <a class="category-cards__item cards__item--wide" href="#">
                                 <div class="category-cards__content flex-md-row flex-column-reverse">
                                     <div class="articles-cards__content-box d-flex justify-content-between flex-column">
@@ -449,8 +366,7 @@
                     </div>
                 </div>
             </section>
-        </main>
-
+        </div>
         <!-- Footer -->
         <footer class="footer">
             <div class="footer-top">
@@ -520,5 +436,6 @@
  
      <!-- Scripts -->
      <script src="./js/main.js"></script>
+    </div>
 </body>
 </html>

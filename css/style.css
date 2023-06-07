@@ -8,6 +8,8 @@
 .header {
     background-color: #fff;
     box-shadow: 0px 8px 50px rgba(0, 94, 210, 0.1);
+    position: relative;
+    z-index: 100;
 }
 
 .z-100{
@@ -57,10 +59,18 @@
 .offcanvas-catalog.offcanvas-top{
     top: 142px;
     height: fit-content;
+    border: none;
+    z-index: 80;
 } 
 
-.header__bottom-inner .offcanvas-backdrop{
+.offcanvas-catalog .offcanvas-body,
+.offcanvas-catalog .offcanvas-header{
+    padding: 30px 0;
+}
+
+#headerBox .offcanvas-backdrop{
     background-color: transparent;
+    z-index: 0;
 }
 
 .icon {
@@ -148,10 +158,6 @@
 
 #mobileMenu .dropdown-item{
     color: var(--accent-color);
-}
-
-.catalog-nav{
-    padding-top: 20px;
 }
 
 .catalog-nav li{

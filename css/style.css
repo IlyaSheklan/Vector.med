@@ -670,6 +670,67 @@
 }
 /* ==OUR PATENTS PAGE END== */
 
+/* ==OUR INVENTORS & OUR LIDERS PAGES START== */
+
+.our-inventors {
+    padding-top: 40px;
+}
+
+.our-inventor__inner .section-title {
+    margin-bottom: 10px;
+}
+
+.our-people__box {
+}
+
+.our-people__item {
+    padding: 0 5px;
+    margin-bottom: 10px;
+}
+
+.our-people__card {
+    padding: 20px;
+    border-radius: 12px;
+    border-color: #E4E4E4;
+}
+.card {
+}
+.our-people__img-box.img-box {
+    padding-top: 112%;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .our-people__img-box.img-box {
+        padding-top: 0%;
+        max-width: 220px;
+        height: 225px;
+        margin-bottom: 0;
+    }
+}
+
+.img-box {
+}
+.card-img-top {
+}
+.img {
+}
+.our-people__item .card-body {
+    padding: 0;
+    color: #000;
+}
+.our-people__card-title {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.our-people__card-text {
+    font-size: 12px;
+    line-height: 14px;
+}
+
+/* ==OUR INVENTORS & OUR LIDERS PAGES END== */
+
 /* Footer styles START */
 .footer {
     padding-top: 40px;

@@ -54,8 +54,8 @@
                                 <!-- offcanvas for catalog -->
                                 <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileCatalog" aria-labelledby="mobileCatalogLabel">
                                     <div class="offcanvas-header offcanvas-header-menu">
-                                      <h5 class="offcanvas-title mobile-menu-title" id="mobileCatalogLabel">Каталог</h5>
-                                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        <h5 class="offcanvas-title mobile-menu-title" id="mobileCatalogLabel">Каталог</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                     </div>
                                     <div class="offcanvas-body">
                                         <ul class="nav catalog-nav">
@@ -81,8 +81,8 @@
                                 <!-- offcanvas for menu -->
                                 <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
                                     <div class="offcanvas-header offcanvas-header-menu">
-                                      <h5 class="offcanvas-title mobile-menu-title" id="mobileMenuLabel">Меню</h5>
-                                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        <h5 class="offcanvas-title mobile-menu-title" id="mobileMenuLabel">Меню</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                     </div>
                                     <div class="offcanvas-body">
                                         <nav class="offcanvas__navbar navbar">
@@ -140,26 +140,6 @@
                                 </svg>
                                 <span>Каталог продукции</span>
                             </a>
-    
-                            <div class="offcanvas offcanvas-top offcanvas-catalog" tabindex="-1" id="catalogMenu" aria-labelledby="catalogMenuLabel">
-                                <div class="container">
-                                    <div class="offcanvas-header justify-content-end">
-                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                    </div>
-                                    <div class="offcanvas-body">
-                                        <ul class="nav catalog-nav flex-column">
-                                            <li><a class="catalog-item" href="#">Золотые внутриматочные спирали</a></li>
-                                            <li><a class="catalog-item" href="#">Серебряные внутриматочные спирали</a></li>
-                                            <li><a class="catalog-item" href="#">Внутриматочные спирали с прополисом и календулой</a></li>
-                                            <li><a class="catalog-item" href="#">Кольцеобразные внутриматочные спирали</a></li>
-                                            <li><a class="catalog-item" href="#">Ф-образные внутриматочные спирали (аналог "Мультилоад")</a></li>
-                                            <li><a class="catalog-item" href="#">Т-образные внутриматочные спирали</a></li>
-                                            <li><a class="catalog-item" href="#">Устройство для внутриматочной биопсии УВБ - «Вектор»</a></li>
-                                            <li><a class="catalog-item" href="#">Аспиратор вакуумный мануальный АВМ - "Вектор"</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
                             
                             <!-- Navigation -->
                             <nav class="header__navbar navbar d-none d-md-block ms-3">
@@ -204,6 +184,25 @@
                     </div>
                 </div>
             </header>
+            <div class="offcanvas offcanvas-top offcanvas-catalog" tabindex="-1" id="catalogMenu" aria-labelledby="catalogMenuLabel">
+                <div class="container d-flex flex-row-reverse">
+                    <div class="offcanvas-header d-block">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="nav catalog-nav flex-column">
+                            <li><a class="catalog-item" href="#">Золотые внутриматочные спирали</a></li>
+                            <li><a class="catalog-item" href="#">Серебряные внутриматочные спирали</a></li>
+                            <li><a class="catalog-item" href="#">Внутриматочные спирали с прополисом и календулой</a></li>
+                            <li><a class="catalog-item" href="#">Кольцеобразные внутриматочные спирали</a></li>
+                            <li><a class="catalog-item" href="#">Ф-образные внутриматочные спирали (аналог "Мультилоад")</a></li>
+                            <li><a class="catalog-item" href="#">Т-образные внутриматочные спирали</a></li>
+                            <li><a class="catalog-item" href="#">Устройство для внутриматочной биопсии УВБ - «Вектор»</a></li>
+                            <li><a class="catalog-item" href="#">Аспиратор вакуумный мануальный АВМ - "Вектор"</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="main flex-grow-1 flex-shrink-1">
             <section class="articles">
@@ -372,12 +371,12 @@
             <div class="footer-top">
                 <div class="container">
                     <div class="footer-top__inner row">
-                        <div class="footer-logo mb-3 col-lg-3">
+                        <div class="footer-logo mb-3 mb-lg-0 col-lg-3">
                             <a href="/">
                                 <img class="f-logo" src="./assets/logo/logo-footer.svg" alt="Логотип для подвала">
                             </a>
                         </div>
-                        <div class="footer-address mb-3 col-lg-3">
+                        <div class="footer-address mb-3 mb-lg-0 col-lg-3">
                             <p>347369, Россия, Ростовская область, г. Волгодонск, ул. Железнодорожная, 94</p>
                             <p>Телефон/факс: (8639) 26-84-96, 26-86-31, 26-86-39</p>
                             <p>E-mail: vektor@vektor-med.ru</p>
@@ -389,7 +388,7 @@
                             <p>К/с: 30101810600000000602</p>
                             <p>БИК: 046015602</p>
                         </div>
-                        <div class="footer-policy col-lg-3 text-lg-end">
+                        <div class="footer-policy col-lg-3 mb-lg-0 text-lg-end">
                             <a href="#">Политика конфиденциальности</a>
                         </div>
                     </div>

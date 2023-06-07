@@ -560,6 +560,14 @@
     max-height: 160px;
     object-fit: cover;
 }
+
+.articles-cards__item-img-box.img-box{
+    display: none;
+}
+
+.cards__item--wide .articles-cards__item-img-box{
+    display: block;
+}
 /* Articles section styles END */
 
 /* Footer styles START */

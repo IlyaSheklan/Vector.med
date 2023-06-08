@@ -747,6 +747,87 @@
 
 /* ==OUR INVENTORS & OUR LIDERS PAGES END== */
 
+/* ==COMMERCE PAGE START== */
+
+.commerce {
+    padding-top: 40px;
+}
+
+@media (min-width: 992px) {
+    .commerce {
+        padding-top: 50px;
+    }
+}
+
+.commerce .section-title {
+    margin-bottom: 10px;
+}
+
+@media (min-width: 992px) {
+    .commerce .section-title {
+        margin-bottom: 20px;
+    }
+}
+
+.commerce__documents-item {
+    border: 1px solid rgba(228, 228, 228, 1);
+    padding: 21px 20px;
+    border-bottom: 0.5px;
+}
+
+@media (min-width: 992px) {
+    .commerce__documents-item {
+        padding: 30px;
+    }
+}
+
+.commerce__documents-item:first-child{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.commerce__documents-item:last-child{
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-bottom: 1px solid rgba(228, 228, 228, 1);
+}
+
+.commerce__icon {
+    margin-right: 14px;
+}
+
+@media (min-width: 992px) {
+    .commerce__icon {
+        width: 37px;
+        height: 37px;
+        margin-right: 21px;
+    }
+}
+
+.commerce__document-name {
+    max-width: 154px;
+}
+
+@media (min-width: 992px) {
+    .commerce__document-name {
+        max-width: fit-content;
+        font-size: 20px;
+        line-height: 23px;
+    }
+}
+
+.commerce__document-download .btn-main {
+    padding: 11px 22px;
+}
+
+@media (min-width: 992px) {
+    .commerce__document-download .btn-main {
+        padding: 15px 68px;
+    }
+}
+
+/* ==COMMERCE PAGE END== */
+
 /* Footer styles START */
 .footer {
     padding-top: 40px;

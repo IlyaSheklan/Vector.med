@@ -799,30 +799,32 @@
 
 /* ==COMMERCE PAGE END== */
 
-/* DELIVERY PAGE START */
-.delivery__inner {
+/* B2B PAGES START */
+.b2b__inner {
     font-size: 12px;
     line-height: 14px;
 }
 
 @media (min-width: 768px) {
-    .delivery__inner {
+    .b2b__inner {
         font-size: 16px;
         line-height: 19px;
     }
 }
 
-.delivery .section-title {
+.delivery .section-title,
+.payment .section-title {
     margin-bottom: 10px;
 }
 
 @media (min-width: 768px) {
-    .delivery .section-title {
+    .delivery .section-title,
+    .payment .section-title {
         margin-bottom: 20px;
     }
 }
 
-.delivery-slogan {
+.b2b-slogan {
     font-family: 'GolosText-Medium';
     font-weight: 500;
     margin-bottom: 7px;
@@ -831,8 +833,7 @@
     color: #000;
     text-decoration: underline;
 }   
-
-/* DELIVERY PAGE END */
+/* B2B PAGES END */
 
 /* Footer styles START */
 .footer {

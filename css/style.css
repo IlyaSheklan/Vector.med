@@ -571,11 +571,6 @@
 /* ==MAIN PAGE END== */
 
 /* ==DETAIL ARTICLE PAGE START== */
-
-.detail-article {
-    padding-top: 40px;
-}
-
 .detail-article__inner .section-title.title-main {
     margin-bottom: 10px;
 }
@@ -649,16 +644,6 @@
 /* ==DETAIL ARTICLE PAGE END== */
 
 /* ==OUR PATENTS PAGE START== */
-.patents{
-    padding-top: 40px;
-}
-
-@media (min-width: 768px) {
-    .patents{
-        padding-top: 50px;
-    }
-}
-
 .patents__inner .section-title.title-main{
     margin-bottom: 10px;
 }
@@ -671,11 +656,6 @@
 /* ==OUR PATENTS PAGE END== */
 
 /* ==OUR INVENTORS & OUR LIDERS PAGES START== */
-
-.our-inventors,
-.our-liders {
-    padding-top: 40px;
-}
 
 .our-inventor__inner .section-title,
 .our-inventor__inner .section-title{
@@ -749,16 +729,6 @@
 
 /* ==COMMERCE PAGE START== */
 
-.commerce {
-    padding-top: 40px;
-}
-
-@media (min-width: 992px) {
-    .commerce {
-        padding-top: 50px;
-    }
-}
-
 .commerce .section-title {
     margin-bottom: 10px;
 }
@@ -806,6 +776,7 @@
 
 .commerce__document-name {
     max-width: 154px;
+    color: #000;
 }
 
 @media (min-width: 992px) {
@@ -827,6 +798,41 @@
 }
 
 /* ==COMMERCE PAGE END== */
+
+/* DELIVERY PAGE START */
+.delivery__inner {
+    font-size: 12px;
+    line-height: 14px;
+}
+
+@media (min-width: 768px) {
+    .delivery__inner {
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+
+.delivery .section-title {
+    margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+    .delivery .section-title {
+        margin-bottom: 20px;
+    }
+}
+
+.delivery-slogan {
+    font-family: 'GolosText-Medium';
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+.delivery-link {
+    color: #000;
+    text-decoration: underline;
+}   
+
+/* DELIVERY PAGE END */
 
 /* Footer styles START */
 .footer {

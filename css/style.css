@@ -833,6 +833,12 @@
     color: #000;
     text-decoration: underline;
 }   
+
+@media (min-width:768px) {
+    .contacts__img-box.img-box{
+        padding-top: 23%;
+    }
+}
 /* B2B PAGES END */
 
 /* Footer styles START */

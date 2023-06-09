@@ -917,6 +917,12 @@
     margin-bottom: 20px;
 }
 
+@media (min-width: 768px) {
+    .detail-catalog__good-info{
+        width: 50%;
+    }
+}
+
 .detail-catalog__good-title.title-main{
     font-size: 18px;
     line-height: 21px;

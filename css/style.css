@@ -728,7 +728,6 @@
 /* ==OUR INVENTORS & OUR LIDERS PAGES END== */
 
 /* ==COMMERCE PAGE START== */
-
 .commerce .section-title {
     margin-bottom: 10px;
 }
@@ -796,10 +795,9 @@
         padding: 15px 68px;
     }
 }
-
 /* ==COMMERCE PAGE END== */
 
-/* B2B PAGES START */
+/* ==B2B PAGES (delivery, payment, requisites and contacts) START== */
 .b2b__inner {
     font-size: 12px;
     line-height: 14px;
@@ -839,7 +837,72 @@
         padding-top: 23%;
     }
 }
-/* B2B PAGES END */
+/* ==B2B PAGES (delivery, payment, requisites and contacts) END== */
+
+/* ==CATALOG PAGE START== */
+.catalog__card-item {
+    padding: 5px;
+}
+
+.catalog__card-box {
+    border-radius: 12px;
+}
+
+.catalog__card-img-box.img-box {
+    padding-top: 66.67%;
+}
+
+.catalog__card-img-box .card-img-top {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.catalog__card-box .card-body {
+    color: var(--text-main-color);
+}
+
+.catalog__card-box .card-title {
+    font-size: 14px;
+    line-height: 16px;
+    height: 67px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.catd-price {
+    font-family: 'GolosText-Medium';
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.catalog__card-box .card-body{
+    padding: 10px;
+}
+
+@media (min-width: 768px) {
+    .catalog__card-box .card-body{
+        padding: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .catalog__card-box .btn-main{
+        font-size: 14px;
+        line-height: 16px;
+        padding: 11px 0;
+    }
+}
+/* ==CATALOG PAGE END== */
+
+/* ==DETAIL PAGE GOODS START== */
+
+/* ==DETAIL PAGE GOODS END== */
+
+/* ==MODAL START== */
+
+/* ==MODAL END== */
 
 /* Footer styles START */
 .footer {

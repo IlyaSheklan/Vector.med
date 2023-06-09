@@ -21,12 +21,12 @@
 }
 
 .head-logo {
-    max-width: 123px;
+    max-width: 109px;
 }
 
 @media (min-width: 768px) {
     .head-logo {
-        max-width: 159px;
+        max-width: 145px;
     }
 }
 
@@ -688,7 +688,7 @@
 }
 
 .our-people__img-box.img-box {
-    padding-top: 112%;
+    padding-top: 108%;
     margin-bottom: 20px;
 }
 
@@ -871,10 +871,20 @@
     overflow: hidden;
 }
 
-.catd-price {
+.card-price {
     font-family: 'GolosText-Medium';
     font-size: 20px;
     line-height: 24px;
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .card-price {
+        font-family: 'GolosText-Medium';
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
 }
 
 .catalog__card-box .card-body{

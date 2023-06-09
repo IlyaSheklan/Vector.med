@@ -473,7 +473,7 @@
 }
 /* Cards END */
 
-/* Slider & Category section styles START */
+/* Slider & Category section styles END */
 
 /* Our patents section styles START */
 .our-patents {
@@ -907,13 +907,6 @@
 /* ==CATALOG PAGE END== */
 
 /* ==DETAIL PAGE GOODS START== */
-.detail-catalog {
-}
-.section-padding-top {
-}
-.container {
-}
-
 .detail-catalog__inner {
     border: 1px solid #E4E4E4;
     border-radius: 12px;
@@ -929,10 +922,7 @@
     line-height: 21px;
     margin-bottom: 20px;
 }
-.title-main {
-}
-.detail-catalog__good-photos {
-}
+
 .detail-catalog__good-main-photo.img-box{
     padding-top: 67%;
 }
@@ -940,10 +930,7 @@
 .detail-catalog__good-main-photo .img{
     border-radius: 12px;
 }
-.img-box {
-}
-.img {
-}
+
 .detail-catalog__good-gallery {
     display: flex;
     flex-wrap: wrap;
@@ -982,8 +969,6 @@
     box-shadow: 0px 8px 50px rgba(0, 94, 210, 0.1);
 }
 
-.detail__catalog-order-specification {
-}
 .specification-list {
     padding: 0;
 }
@@ -1009,13 +994,7 @@
     font-size: 14px;
     line-height: 16px;
 }
-.btn {
-}
-.btn-main {
-}
 
-.detail__catalog-description {
-}
 .detail__catalog-description-title {
     font-family: 'Rubik-Regular';
     color: var(--text-main-color);
@@ -1034,8 +1013,6 @@
     color: var(--text-main-color);
 }
 
-.detail-catalog__question {
-}
 .detail-catalog__question-content {
     border: 1px solid #E4E4E4;
     border-radius: 12px;
@@ -1050,11 +1027,6 @@
 
 .detail-catalog__question-content .btn-main{
     padding: 15px 36px;
-}
-
-.btn {
-}
-.btn-main {
 }
 
 /* ==DETAIL PAGE GOODS END== */

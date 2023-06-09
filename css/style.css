@@ -913,13 +913,17 @@
 }
 .container {
 }
+
 .detail-catalog__inner {
-}
-.detail-catalog__good-info {
     border: 1px solid #E4E4E4;
     border-radius: 12px;
     padding: 20px;
 }
+
+.detail-catalog__good-info{
+    margin-bottom: 20px;
+}
+
 .detail-catalog__good-title.title-main{
     font-size: 18px;
     line-height: 21px;
@@ -956,6 +960,101 @@
 
 .detail-catalog__good-gallery-item .img{
     border-radius: 4px;
+}
+
+.detail__catalog-order {
+    margin-bottom: 25px;
+}
+.detail__catalog-order-price-box {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.order-price{
+    display: inline-block;
+    font-family: 'GolosText-Medium';
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    padding: 15px 82px;
+    border: 1px solid #79BEFF;
+    border-radius: 30px;
+    box-shadow: 0px 8px 50px rgba(0, 94, 210, 0.1);
+}
+
+.detail__catalog-order-specification {
+}
+.specification-list {
+    padding: 0;
+}
+.specification__item {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-gray);
+    margin-bottom: 7px;
+}
+
+.specification__item div{
+    border-bottom: 1px dashed #E4E4E4;
+    flex-grow: 1;
+}
+
+.detail__catalog-btn-order{
+    text-align: center;
+}
+
+.detail__catalog-btn-order .btn-main{
+    padding: 16px 43px;
+    font-size: 14px;
+    line-height: 16px;
+}
+.btn {
+}
+.btn-main {
+}
+
+.detail__catalog-description {
+}
+.detail__catalog-description-title {
+    font-family: 'Rubik-Regular';
+    color: var(--text-main-color);
+    margin-bottom: 15px;
+}
+
+.detail__catalog-description-title::after{
+    content: '';
+    display: block;
+    margin-top: 2px;
+    width: 77px;
+    border: 2px solid var(--accent-color);
+}
+
+.detail__catalog-description-text {
+    color: var(--text-main-color);
+}
+
+.detail-catalog__question {
+}
+.detail-catalog__question-content {
+    border: 1px solid #E4E4E4;
+    border-radius: 12px;
+    text-align: center;
+    padding: 41px 0;
+}
+
+.detail-catalog__question-content p{
+    font-family: 'Rubik-Regular';
+    color: var(--text-main-color);
+}
+
+.detail-catalog__question-content .btn-main{
+    padding: 15px 36px;
+}
+
+.btn {
+}
+.btn-main {
 }
 
 /* ==DETAIL PAGE GOODS END== */

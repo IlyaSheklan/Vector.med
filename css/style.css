@@ -1089,6 +1089,77 @@
 /* ==DETAIL PAGE GOODS END== */
 
 /* ==MODAL START== */
+.modal-content {
+    padding: 20px;
+}
+.modal-header {
+    border: none;
+    padding: 0;
+}
+.modal-title {
+    font-family: 'Rubik-Regular';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--text-main-color);
+}
+
+@media (min-width: 992px) {
+    .modal-title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.call-modal__content {
+    font-size: 14px;
+}
+
+@media (min-width: 992px) {
+    .call-modal__content {
+        font-size: 16px;
+    }
+}
+
+.form-input {
+    color: var(--text-main-color);
+}
+
+.form-input span {
+    color: rgba(255, 58, 58, 1);
+}
+
+.form-input input{
+    border-radius: 12px;
+    padding: 0.438rem 0.75rem;
+}
+
+@media (min-width: 992px) {
+    .form-input input{
+        padding: 0.75rem 0.75rem;
+    }
+}
+
+.form-btn .btn-main {
+    width: 100%;
+    padding: 16px 0;
+}
+
+.call-modal__subtext {
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--color-gray);
+    text-align: center;
+}
+
+.call-modal__subtext a {
+    color: var(--color-gray);
+    text-decoration: underline;
+}
 
 /* ==MODAL END== */
 

@@ -255,7 +255,7 @@
                                         </ul>
                                     </div>
                                     <div class="detail__catalog-btn-order">
-                                        <a class="btn btn-main" href="#">Оставить заявку</a>
+                                        <a class="btn btn-main" href="#" data-bs-toggle="modal" data-bs-target="#orderModal">Оставить заявку</a>
                                     </div>
                                 </div>
                             </div>
@@ -345,7 +345,7 @@
 
             <!-- Modal -->
 
-            <!-- Call modal -->
+            <!-- Call modal start-->
             <div class="modal fade" id="callModal" tabindex="-1" aria-labelledby="callModalLabel" aria-hidden="true">
                 <div class="modal-dialog call-modal">
                   <div class="modal-content">
@@ -365,7 +365,7 @@
                                     required
                                 >
                                 <div class="invalid-feedback">
-                                    Please enter a message in the textarea.
+                                    Пожалуйста, введите имя корректно.
                                 </div>
                             </div>
                             <div class="form-input mb-3">
@@ -382,7 +382,11 @@
                                     type="tel" 
                                     class="form-control" 
                                     id="phone"
+                                    required
                                 >
+                                <div class="invalid-feedback">
+                                    Пожалуйста, введите номер телефона корректно.
+                                </div>
                             </div>
                             <div class="form-btn mb-3">
                                 <button class="btn btn-main call-btn" type="submit">Отправить</button>
@@ -396,6 +400,94 @@
                   </div>
                 </div>
             </div>
+            <!-- Call modal end -->
+
+            <!-- Order modal start -->
+            <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+                <div class="modal-dialog order-modal">
+                  <div class="modal-content">
+                    <div class="modal-header mb-3">
+                      <h1 class="modal-title" id="orderModalLabel">Оставить заявку</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="call-modal__content">
+                        <form action="#" class="call-modal__content-form" novalidate>
+                            <div class="form-input mb-3">
+                                <label for="name" class="form-label">Наименование товара</label>
+                                <input 
+                                    type="text" 
+                                    class="form-control" 
+                                    id="name-good"
+                                    readonly
+                                    required
+                                >
+                            </div>
+                            <div class="form-input mb-3">
+                                <label for="name" class="form-label">Ваше имя<span>*</span></label>
+                                <input 
+                                    type="text" 
+                                    class="form-control" 
+                                    id="name"
+                                    required
+                                >
+                                <div class="invalid-feedback">
+                                    Пожалуйста, введите имя корректно.
+                                </div>
+                            </div>
+                            <div class="form-input mb-3">
+                                <label for="company" class="form-label">Название организации</label>
+                                <input 
+                                    type="text" 
+                                    class="form-control" 
+                                    id="company"
+                                >
+                            </div>
+                            <div class="form-input mb-3">
+                                <label for="phone" class="form-label">Телефон<span>*</span></label>
+                                <input 
+                                    type="tel" 
+                                    class="form-control" 
+                                    id="phone"
+                                    required
+                                >
+                                <div class="invalid-feedback">
+                                    Пожалуйста, введите номер телефона корректно.
+                                </div>
+                            </div>
+                            <div class="form-input mb-3">
+                                <label for="phone" class="form-label">Email<span>*</span></label>
+                                <input 
+                                    type="email" 
+                                    class="form-control" 
+                                    id="email"
+                                    required
+                                >
+                                <div class="invalid-feedback">
+                                    Пожалуйста, введите адресс электронной почты корректно.
+                                </div>
+                            </div>
+                            <div class="form-input mb-3">
+                                <label for="phone" class="form-label">Примечание</label>
+                                <textarea 
+                                    type="text" 
+                                    class="form-control" 
+                                    id="note"
+                                ></textarea>
+                            </div>
+                            <div class="form-btn mb-3">
+                                <button class="btn btn-main call-btn" type="submit">Отправить</button>
+                            </div>
+                        </form>
+                        <div class="call-modal__subtext">
+                            Нажимая кнопку “Отправить”, вы подтверждаете свое согласие с <a href="#">Политикой конфиденциальности</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!-- Order modal end -->
         </footer>
     </div>
     

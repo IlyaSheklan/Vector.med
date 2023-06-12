@@ -1161,6 +1161,10 @@
     text-decoration: underline;
 }
 
+.form-input textarea{
+    resize: none;
+}
+
 /* ==MODAL END== */
 
 /* Footer styles START */

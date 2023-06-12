@@ -110,10 +110,16 @@
     display: none;
 }
 
+.nav-link.dropdown-toggle{
+    display: flex;
+    align-items: center;
+}
+
 .icon.arrow{
     width: 8px;
     -webkit-transition: .2s;
     transition: .2s;
+    margin-left: 12px;
 }
 
 .list-item:hover .icon.arrow{
@@ -694,11 +700,17 @@
 
 @media (min-width: 768px) {
     .our-people__img-box.img-box {
-        padding-top: 0%;
+        padding-top: 43%;
         max-width: 220px;
         height: auto;
         margin-bottom: 0;
         margin-right: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .our-people__img-box.img-box {
+        padding-top: 0%;
     }
 }
 

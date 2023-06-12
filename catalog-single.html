@@ -355,7 +355,7 @@
                     </div>
                     <div class="modal-body">
                       <div class="call-modal__content">
-                        <form action="#" class="call-modal__content" novalidate>
+                        <form action="#" class="call-modal__content" id="form_1" novalidate>
                             <div class="form-input mb-3">
                                 <label for="name" class="form-label">Ваше имя<span>*</span></label>
                                 <input 
@@ -502,5 +502,11 @@
  
      <!-- Scripts -->
      <script src="./js/main.js"></script>
+
+     <script type="text/javascript">
+        (function(){
+            var callModal = new window.OrderModal('form_1');
+        })();
+     </script>
 </body>
 </html>

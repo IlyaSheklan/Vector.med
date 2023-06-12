@@ -363,6 +363,7 @@
                                     class="form-control" 
                                     id="name"
                                     required
+                                    autocomplete="off"
                                 >
                                 <div class="invalid-feedback">
                                     Пожалуйста, введите имя корректно.
@@ -374,6 +375,7 @@
                                     type="text" 
                                     class="form-control" 
                                     id="company"
+                                    autocomplete="off"
                                 >
                             </div>
                             <div class="form-input mb-3">
@@ -383,6 +385,7 @@
                                     class="form-control" 
                                     id="phone"
                                     required
+                                    autocomplete="off"
                                 >
                                 <div class="invalid-feedback">
                                     Пожалуйста, введите номер телефона корректно.
@@ -412,7 +415,7 @@
                     </div>
                     <div class="modal-body">
                       <div class="call-modal__content">
-                        <form action="#" class="call-modal__content-form" novalidate>
+                        <form action="#" class="call-modal__content-form" id="form_2" novalidate>
                             <div class="form-input mb-3">
                                 <label for="name" class="form-label">Наименование товара</label>
                                 <input 
@@ -507,6 +510,8 @@
      <script type="text/javascript">
         (function(){
             var callModal = new window.OrderModal('form_1');
+
+            var orderModal = new window.OrderModal('form_2');
         })();
      </script>
 </body>

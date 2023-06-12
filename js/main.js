@@ -31,10 +31,9 @@
         this.formId = formId;
 
         this.$form;
-        this.$phoneList;
+        this.$phoneList = [];
 
         this.init();
-        // this._send();
     }
 
     window.OrderModal.prototype = {
@@ -52,9 +51,9 @@
         },
 
         _send: function(e) {
-            // e.preventDefault();
+            e.preventDefault();
 
-            this.form.classList.remove('was-validated');
+            this.$form.classList.remove('was-validated');
             if(!this.$form.checkValidity()){
                 this.$form.classList.add('was-validated');
                 return false;
@@ -69,6 +68,8 @@
             }
 
             this._phoneInit();
+            
+            this.$form.addEventListener('submit', this._send.bind(this));
         }
     }
 })();

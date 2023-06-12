@@ -30,28 +30,45 @@
     window.OrderModal = function(formId, formData = {}){
         this.formId = formId;
 
+        this.$form;
+        this.$phoneList;
+
         this.init();
-        this._send();
+        // this._send();
     }
 
     window.OrderModal.prototype = {
+        _phoneInit: function () {
+            this.$phoneList = Array.from(this.$form.querySelectorAll('input[type="tel"]'));
+
+            if (!this.$phoneList.length || typeof Inputmask === 'undefined') {
+                return false;
+            }
+
+            var im = new Inputmask('+7 (999) 999-99-99');
+            for (var idx in this.$phoneList) {
+                im.mask(this.$phoneList[idx]);
+            }
+        },
+
         _send: function(e) {
             // e.preventDefault();
 
             this.form.classList.remove('was-validated');
-            if(!this.form.checkValidity()){
-                this.form.classList.add('was-validated');
+            if(!this.$form.checkValidity()){
+                this.$form.classList.add('was-validated');
                 return false;
             }
         },
 
         init: function() {
-            this.form = document.querySelector('#' + this.formId);
-            console.log(this.form);
+            this.$form = document.querySelector('#' + this.formId);
 
-            if(!this.form){
+            if(!this.$form){
                 return false;
             }
+
+            this._phoneInit();
         }
     }
 })();

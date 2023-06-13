@@ -1101,6 +1101,20 @@
 /* ==DETAIL PAGE GOODS END== */
 
 /* ==MODAL START== */
+.modal{
+    --bs-modal-width: 400px;
+}
+
+@media (min-width: 576px) {
+    .modal#callModal{
+        --bs-modal-margin: 12.75rem;
+    }
+
+    .modal#orderModal{
+        --bs-modal-margin: 4.75rem;
+    }
+}
+
 .modal-content {
     padding: 20px;
 }

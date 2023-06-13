@@ -58,6 +58,9 @@
                 this.$form.classList.add('was-validated');
                 return false;
             }
+
+            var body = new FormData(this.$form);
+            console.log(body.get('name'));
         },
 
         init: function() {
